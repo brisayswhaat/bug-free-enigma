@@ -43,13 +43,13 @@
 		<nav id="navigation" class="main-navigation" role="navigation">
 			<ul>
 				<li>
+					<a href="/" title="Go Home"  class="main-navigation-link mobile-only"><i class="fa fa-home"></i></a>
+				</li>
+				<li>
 					<a href="/about" title="About Bri" class="main-navigation-link">about</a>
 				</li>
 				<li>
 					<a href="http://words.bripiccari.me" title="Blog" class="main-navigation-link">words</a>
-				</li>
-				<li>
-					<a href="/contact" title="Contact Bri" class="main-navigation-link">contact</a>
 				</li>
 			</ul>
 		</nav>

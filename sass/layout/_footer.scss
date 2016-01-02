@@ -1,10 +1,16 @@
 .site-footer {
     @include size(100% 120px);
-    @include position(fixed, null null 0);
+    @include position(relative, null null 0);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
     background-color: $white;
+    padding: 0 15px;
+
+    @include media($screen-large) {
+        @include position(fixed, null null 0);
+        padding: 0;
+    }
 }
 
 .social-row {

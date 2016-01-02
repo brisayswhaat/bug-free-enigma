@@ -1,19 +1,43 @@
+html {
+    font-size: 13px;
+
+    @include media($screen-medium) {
+        font-size: 14px;
+    }
+
+    @include media($screen-large) {
+        font-size: 16px;        // 1rem = 16px
+    }
+}
+
 body {
     background-color: $brand-teal;
 }
 
 .hero {
-    @include outer-container;
-    @include size(100% 75vh);
+    @include size(100% auto);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
+    min-height: 75vh;
+    padding: 40px 0;
+
+    @include media($screen-large) {
+        @include outer-container;
+        @include size(100% 75vh);
+        padding: 0;
+    }
 }
 
 .outer-container {
-    @include span-columns(9 of 12);
     @include display(flex);
     @include flex-direction(column);
+    width: 90%;
+    margin: 0 auto;
+
+    @include media($screen-large) {
+        @include span-columns(9 of 12);
+    }
 }
 
 .headline {
@@ -22,5 +46,12 @@ body {
 
     li {
         list-style-type: none;
+        display: inline;
+    }
+
+    @include media($screen-large) {
+        li {
+            display: block;
+        }
     }
 }

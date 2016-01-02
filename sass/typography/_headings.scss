@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 .headline {
 	font-family: $brand-serif;
 	font-weight: $font-weight-bold;
-	font-size:  $font-size-body;
+	font-size:  21px;
 	color: $white;
 	line-height: 1.75;
 	letter-spacing: .4px;
@@ -20,9 +20,17 @@ h1, h2, h3, h4, h5, h6 {
 			color: $brand-gray;
 		}
 	}
+
+	@include media($screen-large) {
+		font-size:  $font-size-body;
+	}
 }
 
 .headline-largest {
-	font-size: $font-size-title;
+	font-size: 28px;
 	font-weight: $font-weight-heavy;
+
+	@include media($screen-large) {
+		font-size: $font-size-title;
+	}
 }

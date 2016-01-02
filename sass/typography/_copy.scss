@@ -17,3 +17,29 @@ address {
 big {
 	font-size: 125%;
 }
+
+//	Footer Copy Styles
+.site-footer {
+	.fa {
+		display: inline-block;
+		color: $brand-gray;
+		font-size: $font-size-footer;
+		padding: 0 5px;
+
+		&:hover {
+			color: $brand-teal;
+		}
+
+		&.fa-heart {
+			font-size: $font-size-footer - .5;
+			padding: 0 2px;
+		}
+	}
+}
+
+.footer-copy {
+	font-family: $brand-serif;
+	color: $brand-gray;
+	font-size: $font-size-footer - .5;
+	line-height: 2;
+}

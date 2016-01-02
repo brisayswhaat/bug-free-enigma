@@ -3,40 +3,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .headline {
-  font-family: $brand-font-family;
-  font-size: $font-size-title - 1;
-  font-weight: $font-weight-bold;
-  color: $brand-gray;
+	font-family: $brand-serif;
+	font-weight: $font-weight-bold;
+	font-size:  $font-size-body;
+	color: $white;
+	line-height: 1.75;
+	letter-spacing: .4px;
 }
 
-.title-link {
-  text-decoration: none;
-  color: $brand-teal;
-
-  &:hover {
-    color: $brand-mustard;
-  }
-}
-
-.subtitle {
-  padding: 80px 0 0;
-  font-family: $brand-font-family;
-  font-size: $font-size-body - .75;
-  font-weight: $font-weight-light;
-  color: $off-white;
-}
-
- @include media($screen-large) {
-	.headline {
-		font-size: $font-size-title;
-	}
-
-	.subtitle {
-		padding: 40px 0 0;
-		font-size: $font-size-body;
-	}
-
-	.body-copy {
-		font-size: $font-size-small;
-	}
+.headline-largest {
+	font-size: $font-size-title;
+	font-weight: $font-weight-heavy;
 }

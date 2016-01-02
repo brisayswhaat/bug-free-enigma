@@ -215,34 +215,17 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 .headline {
-  font-family: "proxima-nova", "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-family: "Merriweather", Georgia, Times, serif;
   font-weight: 700;
-  color: #363636; }
+  font-size: 1.75rem;
+  color: #fff;
+  line-height: 1.75;
+  letter-spacing: .4px; }
 
-.title-link {
-  text-decoration: none;
-  color: #33a4a6; }
-  .title-link:hover {
-    color: #dc9d49; }
+.headline-largest {
+  font-size: 3.75rem;
+  font-weight: 900; }
 
-.subtitle {
-  padding: 80px 0 0;
-  font-family: "proxima-nova", "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.35rem;
-  font-weight: 300;
-  color: #f3f5f6; }
-
-@media screen and (min-width: 960px) {
-  .headline {
-    font-size: 2.5rem; }
-
-  .subtitle {
-    padding: 40px 0 0;
-    font-size: 2.1rem; }
-
-  .body-copy {
-    font-size: 1.5rem; } }
 p {
   margin-bottom: 1.5em; }
 
@@ -257,6 +240,23 @@ address {
 
 big {
   font-size: 125%; }
+
+.site-footer .fa {
+  display: inline-block;
+  color: #363636;
+  font-size: 1.25rem;
+  padding: 0 5px; }
+  .site-footer .fa:hover {
+    color: #41c8b9; }
+  .site-footer .fa.fa-heart {
+    font-size: 0.75rem;
+    padding: 0 2px; }
+
+.footer-copy {
+  font-family: "Merriweather", Georgia, Times, serif;
+  color: #363636;
+  font-size: 0.75rem;
+  line-height: 2; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -388,6 +388,125 @@ a:hover, a:active {
 # Layout
 --------------------------------------------------------------*/
 body {
-  background-color: #33a4a6; }
+  background-color: #41c8b9; }
+
+.hero {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
+.outer-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column; }
+  .outer-container:last-child {
+    margin-right: 0; }
+
+.headline {
+  padding: 0;
+  margin: 0 0 10px; }
+  .headline li {
+    list-style-type: none; }
+
+.site-footer {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  background-color: #fff; }
+
+.social-row {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .social-row ul, .social-row li {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0; }
+  .social-row li {
+    display: inline-block; }
+
+.site-info {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

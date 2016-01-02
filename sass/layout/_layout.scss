@@ -1,3 +1,26 @@
 body {
     background-color: $brand-teal;
 }
+
+.hero {
+    @include outer-container;
+    @include size(100% 80vh);
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+}
+
+.outer-container {
+    @include span-columns(9 of 12);
+    @include display(flex);
+    @include flex-direction(column);
+}
+
+.headline {
+    padding: 0;
+    margin: 0 0 10px;
+
+    li {
+        list-style-type: none;
+    }
+}

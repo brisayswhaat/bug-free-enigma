@@ -20,9 +20,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href="http://fonts.googleapis.com/css?family=Merriweather:300,300italic" rel="stylesheet" type="text/css">
-<script src="//use.typekit.net/swx1oyy.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:700,400,900,400italic,700italic' rel='stylesheet' type='text/css'>
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,7 +39,19 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-
+		<nav id="navigation" class="main-navigation" role="navigation">
+			<ul>
+				<li class="">
+					<a href="/about" title="About Bri">about</a>
+				</li>
+				<li class="">
+					<a href="http://www.words.bripiccari.me" title="Blog">words</a>
+				</li>
+				<li class="">
+					<a href="/contact" title="Contact Bri">contact</a>
+				</li>
+			</ul>
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

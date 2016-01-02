@@ -1,14 +1,15 @@
 // Defined Variables
 
-  $brand-font-family: 'proxima-nova', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  $brand-sans-serif: 'proxima-nova', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   $brand-serif: 'Merriweather', Georgia, Times, serif;
 
   $font-weight-light:   300;
   $font-weight-regular: 400;
   $font-weight-bold:    700;
+  $font-weight-heavy:   900;
 
   // 1rem = 14px
-  $font-size-title:     2.5rem;
-  $font-size-body:      2.1rem;
+  $font-size-title:     3.75rem;        //  60 pixels
+  $font-size-body:      1.75rem;        //  28 pixels
   $font-size-small:     1.5rem;
-  $font-size-footer:    .75rem;
+  $font-size-footer:    1.25rem;

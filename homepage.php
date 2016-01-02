@@ -16,11 +16,11 @@ get_header(); ?>
             <div class="outer-container">
                 <h1 class="headline headline-largest">Hello, Bri here.</h1>
                 <ul class="headline">
-                    <li class="">Developer + Designer at The Infantree,<li>
-                    <li class="">President of AIGA Central Pennsylvania,<li>
-                    <li class="">Teacher with Girl Develop It Lehigh Valley,<li>
-                    <li class="">Co-founder of PHLDesignCo.,<li>
-                    <li class="">+ then some.</li>
+                    <li>Developer + Designer at <a href="http://theinfantree.com" target="_blank" title="The Infantree">The Infantree</a>,<li>
+                    <li>President of <a href="http://centralpa.aiga.org" target="_blank" title="AIGA Central Pennsylvania">AIGA Central Pennsylvania</a>,<li>
+                    <li>Teacher with <a href="http://http://www.meetup.com/Girl-Develop-It-Lehigh-Valley/" target="_blank" title="Girl Develop It Lehigh Valley">Girl Develop It Lehigh Valley</a>,<li>
+                    <li>Co-founder + Chief Kitten Officer of <a href="http://phldesign.co/" target="_blank" title="PHL Design Co">PHLDesignCo.</a>,<li>
+                    <li>+ then some.</li>
                 </ul>
             </div>
         </section>

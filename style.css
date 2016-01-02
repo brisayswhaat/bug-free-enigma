@@ -29,6 +29,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+a:active, a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -221,6 +226,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1.75;
   letter-spacing: .4px; }
+  .headline a {
+    color: #fff;
+    text-decoration: none; }
+    .headline a:hover, .headline a:active {
+      font-style: italic;
+      color: #363636; }
 
 .headline-largest {
   font-size: 3.75rem;
@@ -311,78 +322,40 @@ table {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a:focus {
-  outline: thin dotted; }
-a:hover, a:active {
-  outline: 0; }
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
+.site-header {
+  float: left;
   display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: auto; }
+  .site-header:last-child {
+    margin-right: 0; }
+
+.main-navigation {
   float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-
-  .main-navigation ul {
-    display: block; } }
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+  display: block;
+  margin-right: 2.35765%;
+  width: 27.49666%;
+  position: relative;
+  right: 0;
   float: right;
-  text-align: right;
-  width: 50%; }
+  padding-top: 50px; }
+  .main-navigation:last-child {
+    margin-right: 0; }
+  .main-navigation ul, .main-navigation li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+  .main-navigation .main-navigation-link {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px; }
+    .main-navigation .main-navigation-link:hover, .main-navigation .main-navigation-link:active {
+      color: #363636; }
 
 /*--------------------------------------------------------------
 # Layout
@@ -397,7 +370,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   display: -webkit-box;
   display: -moz-box;

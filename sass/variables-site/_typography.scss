@@ -1,6 +1,6 @@
 // Defined Variables
 
-  $brand-sans-serif: 'proxima-nova', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  $brand-sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
   $brand-serif: 'Merriweather', Georgia, Times, serif;
 
   $font-weight-light:   300;
@@ -9,7 +9,16 @@
   $font-weight-heavy:   900;
 
   // 1rem = 14px
-  $font-size-title:     3.75rem;        //  60 pixels
-  $font-size-body:      1.75rem;        //  28 pixels
-  $font-size-small:     1.5rem;
-  $font-size-footer:    1.25rem;
+  $font-size-title:         3.75rem;        //  60 pixels
+  $font-size-body:          1.75rem;        //  28 pixels
+  $font-size-navigation:    1.15rem;
+  $font-size-small:         1.5rem;
+  $font-size-footer:        1.25rem;
+
+
+a {
+    &:active,
+    &:hover {
+        @include transition(all .3s ease-in-out);
+    }
+}

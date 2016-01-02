@@ -14,32 +14,32 @@ address {
 	margin: 0 0 1.5em;
 }
 
-pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code, kbd, tt, var {
-	font-family: $font__code;
-	@include font-size(0.9375);
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
-}
-
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
-}
-
 big {
 	font-size: 125%;
+}
+
+//	Footer Copy Styles
+.site-footer {
+	.fa {
+		display: inline-block;
+		color: $brand-gray;
+		font-size: $font-size-footer;
+		padding: 0 5px;
+
+		&:hover {
+			color: $brand-teal;
+		}
+
+		&.fa-heart {
+			font-size: $font-size-footer - .5;
+			padding: 0 2px;
+		}
+	}
+}
+
+.footer-copy {
+	font-family: $brand-serif;
+	color: $brand-gray;
+	font-size: $font-size-footer - .5;
+	line-height: 2;
 }

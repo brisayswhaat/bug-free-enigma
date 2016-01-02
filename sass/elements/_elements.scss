@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $white;
 }
 
 blockquote, q {
@@ -19,13 +19,6 @@ blockquote, q {
 	&:after {
 		content: "";
 	}
-}
-
-hr {
-	background-color: $color__background-hr;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
 }
 
 @import "lists";

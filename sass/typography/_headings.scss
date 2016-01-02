@@ -1,3 +1,17 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
+
+.headline {
+	font-family: $brand-serif;
+	font-weight: $font-weight-bold;
+	font-size:  $font-size-body;
+	color: $white;
+	line-height: 1.75;
+	letter-spacing: .4px;
+}
+
+.headline-largest {
+	font-size: $font-size-title;
+	font-weight: $font-weight-heavy;
+}

@@ -1,9 +1,42 @@
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-@import "links";
+// Top Level
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-@import "menus";
+.site-header {
+    @include span-columns(12 of 12);
+    height: auto;
+}
+
+.main-navigation {
+    @include span-columns(3.5 of 12);
+    @include position(relative, null 0 null null);
+    float: right;
+    padding-top: 50px;
+
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .main-navigation-link {
+        font-family: $brand-sans-serif;
+        font-size: $font-size-navigation;
+        font-weight: $font-weight-regular;
+        color: $white;
+        text-decoration: none;
+        padding: 10px 25px;
+
+        &:hover,
+        &:active {
+            color: $brand-gray;
+        }
+    }
+
+
+}
+
+
+
+
+
+// Mobile

@@ -9,6 +9,17 @@ h1, h2, h3, h4, h5, h6 {
 	color: $white;
 	line-height: 1.75;
 	letter-spacing: .4px;
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			font-style: italic;
+			color: $brand-gray;
+		}
+	}
 }
 
 .headline-largest {

@@ -4,7 +4,7 @@ body {
 
 .hero {
     @include outer-container;
-    @include size(100% 80vh);
+    @include size(100% 75vh);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);

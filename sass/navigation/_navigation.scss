@@ -1,15 +1,18 @@
-// Top Level
-
 .site-header {
     @include span-columns(12 of 12);
-    height: auto;
+    background-color: $white;
+    height: 100%;
+
+    @include media($screen-large) {
+        background: none;
+        height: auto;
+    }
 }
 
 .main-navigation {
-    @include span-columns(3.5 of 12);
     @include position(relative, null 0 null null);
-    float: right;
-    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
 
     ul, li {
         list-style-type: none;
@@ -18,25 +21,39 @@
         display: inline-block;
     }
 
-    .main-navigation-link {
-        font-family: $brand-sans-serif;
-        font-size: $font-size-navigation;
-        font-weight: $font-weight-regular;
-        color: $white;
-        text-decoration: none;
+    @include media($screen-large) {
+        @include span-columns(3.5 of 12);
+        float: right;
+        padding-top: 50px;
+    }
+}
+
+.main-navigation-link {
+    padding: 15px 25px;
+    margin: 0 auto;
+    display: inline-block;
+    border-left: 1px solid $brand-teal;
+
+    font-family: $brand-sans-serif;
+    font-size: $font-size-navigation;
+    font-weight: $font-weight-regular;
+    color: $brand-teal;
+    text-align: center;
+    text-decoration: none;
+
+    &:first-of-type {
+        border-left: none;
+    }
+
+    @include media($screen-large) {
         padding: 10px 25px;
+        border: none;
+
+        color: $white;
 
         &:hover,
         &:active {
             color: $brand-gray;
         }
     }
-
-
 }
-
-
-
-
-
-// Mobile

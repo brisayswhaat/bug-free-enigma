@@ -1,13 +1,31 @@
+html {
+    font-size: 13px;
+
+    @include media($screen-medium) {
+        font-size: 14px;
+    }
+
+    @include media($screen-large) {
+        font-size: 16px;        // 1rem = 16px
+    }
+}
+
+
 body {
     background-color: $brand-teal;
 }
 
 .hero {
-    @include outer-container;
-    @include size(100% 75vh);
+    @include size(100% auto);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
+
+
+    @include media($screen-large) {
+        @include outer-container;
+        @include size(100% 75vh);
+    }
 }
 
 .outer-container {

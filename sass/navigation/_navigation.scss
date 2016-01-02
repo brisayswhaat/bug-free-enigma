@@ -45,6 +45,14 @@
         border-left: none;
     }
 
+    .fa.fa-home {
+        font-size: 21px;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
     @include media($screen-large) {
         padding: 10px 25px;
         border: none;
@@ -54,6 +62,10 @@
         &:hover,
         &:active {
             color: $brand-gray;
+        }
+
+        .mobile-only {
+            display: none;
         }
     }
 }

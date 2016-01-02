@@ -447,12 +447,7 @@ body {
   margin: 0 auto; }
   @media screen and (min-width: 960px) {
     .outer-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 74.41059%; }
-      .outer-container:last-child {
-        margin-right: 0; } }
+      width: 100%; } }
 
 .headline {
   padding: 0;

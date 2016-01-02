@@ -43,7 +43,7 @@
 		<nav id="navigation" class="main-navigation" role="navigation">
 			<ul>
 				<li>
-					<a href="/" title="Go Home"  class="main-navigation-link mobile-only"><i class="fa fa-home"></i></a>
+					<a href="/" title="Go Home"  class="main-navigation-link"><i class="fa fa-home"></i></a>
 				</li>
 				<li>
 					<a href="/about" title="About Bri" class="main-navigation-link">about</a>

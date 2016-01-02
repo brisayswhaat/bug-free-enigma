@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
 
     @include media($screen-large) {
-        @include span-columns(9 of 12);
+        width: 100%;
     }
 }
 

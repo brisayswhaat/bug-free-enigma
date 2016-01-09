@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Template Name: Homepage Template File
 * @package bug-free-enigma

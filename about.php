@@ -39,6 +39,9 @@ get_header(); ?>
             <div class="right">
                 <h2 class="">currently / seeing</h2>
 
+                <div id="instafeed" class="instafeed">
+                </div>
+
             </div>
 
 

@@ -459,6 +459,10 @@ body {
     .headline li {
       display: block; } }
 
+.instafeed {
+  margin: 0 auto;
+  display: block; }
+
 .site-footer {
   height: 120px;
   width: 100%;

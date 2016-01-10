@@ -258,6 +258,11 @@ address {
 big {
   font-size: 125%; }
 
+.body-copy {
+  font-family: "Merriweather", Georgia, Times, serif;
+  color: #363636;
+  font-size: 1.5rem; }
+
 .site-footer .fa {
   display: inline-block;
   color: #363636;
@@ -458,6 +463,32 @@ body {
   @media screen and (min-width: 960px) {
     .headline li {
       display: block; } }
+
+.text-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  display: inline-block; }
+  .text-wrap:last-child {
+    margin-right: 0; }
+
+.currently-widgets {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: right;
+  display: inline-block; }
+  .currently-widgets:last-child {
+    margin-right: 0; }
+
+.currently-insta .instafeed {
+  width: 100%; }
+  .currently-insta .instafeed a {
+    display: inline-block;
+    width: 32%;
+    margin: 0 2px; }
 
 .instafeed {
   margin: 0 auto;

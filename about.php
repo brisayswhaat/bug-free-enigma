@@ -14,29 +14,29 @@ get_header(); ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <article class="copy-block">
+            <article class="text-wrap">
 
                 <h1 class="">currently / i am...</h1>
 
-                <p class="">
+                <span class="body-copy">
 
                     <?php the_content(); ?>
 
-                </p>
+                </span>
             </article>
 
         <?php endwhile; ?>
 
-        <section class="currently-widgets">
+        <aside class="currently-widgets">
 
-            <div class="left">
+            <div class="currently-spotify">
                 <h2 class="">currently / listening to</h2>
 
                 <iframe src="https://embed.spotify.com/?uri=spotify:user:1215731033:playlist:3U3KUsR8qKpyC5cKmSJMX0" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
             </div>
 
-            <div class="right">
+            <div class="currently-insta">
                 <h2 class="">currently / seeing</h2>
 
                 <div id="instafeed" class="instafeed">
@@ -45,7 +45,7 @@ get_header(); ?>
             </div>
 
 
-        </section>
+        </aside>
 
         </div>
     </main>

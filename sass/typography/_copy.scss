@@ -18,6 +18,13 @@ big {
 	font-size: 125%;
 }
 
+// Body Copy
+.body-copy {
+	font-family: $brand-serif;
+	color: $brand-gray;
+	font-size: $font-size-small;
+}
+
 //	Footer Copy Styles
 .site-footer {
 	.fa {

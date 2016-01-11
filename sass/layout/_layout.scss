@@ -40,6 +40,11 @@ body {
     }
 }
 
+.about-container {
+    @include outer-container;
+    margin: 0 auto;
+}
+
 .headline {
     padding: 0;
     margin: 0 0 10px;
@@ -59,42 +64,5 @@ body {
 .text-wrap {
     @include span-columns(7 of 12);
     display: inline-block;
-}
-
-
-
-.currently-widgets {
-    @include span-columns(4 of 12);
-    float: right;
-    display: inline-block;
-}
-
-.currently-insta {
-
-    .instafeed {
-        width: 100%;
-
-        a {
-            display: inline-block;
-            width: 32%;
-            margin: 0 2px;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.instafeed {
-    margin: 0 auto;
-    display: block;
+    float: left;
 }

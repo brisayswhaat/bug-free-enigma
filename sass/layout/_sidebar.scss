@@ -1,0 +1,19 @@
+.currently-widgets {
+    @include span-columns(4 of 12);
+    @include shift(1 of 12);
+    float: left;
+    display: inline-block;
+}
+
+.currently-insta {
+
+    .instafeed {
+        width: 100%;
+
+        a {
+            display: inline-block;
+            width: 32%;
+            margin: 0 2px;
+        }
+    }
+}

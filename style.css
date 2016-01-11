@@ -454,6 +454,16 @@ body {
     .outer-container {
       width: 100%; } }
 
+.about-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto; }
+  .about-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .headline {
   padding: 0;
   margin: 0 0 10px; }
@@ -469,7 +479,8 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%;
-  display: inline-block; }
+  display: inline-block;
+  float: left; }
   .text-wrap:last-child {
     margin-right: 0; }
 
@@ -478,7 +489,8 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  float: right;
+  margin-left: 8.5298%;
+  float: left;
   display: inline-block; }
   .currently-widgets:last-child {
     margin-right: 0; }
@@ -489,10 +501,6 @@ body {
     display: inline-block;
     width: 32%;
     margin: 0 2px; }
-
-.instafeed {
-  margin: 0 auto;
-  display: block; }
 
 .site-footer {
   height: 120px;

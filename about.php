@@ -18,11 +18,11 @@ get_header(); ?>
 
                 <h1 class="page-title">currently / i am...</h1>
 
-                <span class="body-copy">
+                <div class="body-copy">
 
                     <?php the_content(); ?>
 
-                </span>
+                </div>
             </article>
 
         <?php endwhile; ?>

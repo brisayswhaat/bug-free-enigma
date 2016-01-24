@@ -4,7 +4,6 @@
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
-    background-color: $white;
     padding: 0 15px;
 
     @include media($screen-large) {

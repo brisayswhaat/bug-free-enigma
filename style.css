@@ -481,6 +481,8 @@ body {
     clear: both;
     content: "";
     display: table; }
+  .about-container .body-copy {
+    font-size: 18px; }
 
 .headline {
   padding: 0;
@@ -553,7 +555,6 @@ body {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  background-color: #fff;
   padding: 0 15px; }
   @media screen and (min-width: 960px) {
     .site-footer {

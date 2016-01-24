@@ -44,6 +44,10 @@ body {
     @include outer-container;
     margin: 0 auto;
     padding-top: 150px;
+
+    .body-copy {
+        font-size: 18px;
+    }
 }
 
 .headline {

@@ -243,6 +243,19 @@ h1, h2, h3, h4, h5, h6 {
     .headline-largest {
       font-size: 3.75rem; } }
 
+.page-title {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 3.75rem;
+  letter-spacing: 1.2px;
+  margin-top: 0; }
+
+.widget-header {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 1.75rem;
+  letter-spacing: 1.2px; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -257,6 +270,15 @@ address {
 
 big {
   font-size: 125%; }
+
+.body-copy {
+  font-family: "Merriweather", Georgia, Times, serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: .5px; }
 
 .site-footer .fa {
   display: inline-block;
@@ -447,12 +469,20 @@ body {
   margin: 0 auto; }
   @media screen and (min-width: 960px) {
     .outer-container {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 74.41059%; }
-      .outer-container:last-child {
-        margin-right: 0; } }
+      width: 100%; } }
+
+.about-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  padding-top: 150px; }
+  .about-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .about-container .body-copy {
+    font-size: 18px; }
 
 .headline {
   padding: 0;
@@ -463,6 +493,36 @@ body {
   @media screen and (min-width: 960px) {
     .headline li {
       display: block; } }
+
+.text-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  display: inline-block;
+  float: left; }
+  .text-wrap:last-child {
+    margin-right: 0; }
+
+.currently-widgets {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+  float: left;
+  display: inline-block; }
+  .currently-widgets:last-child {
+    margin-right: 0; }
+
+.currently-insta {
+  padding-top: 50px; }
+  .currently-insta .instafeed {
+    width: 100%; }
+    .currently-insta .instafeed a {
+      display: inline-block;
+      width: 32%;
+      margin: 0 2px; }
 
 .site-footer {
   height: 120px;
@@ -495,11 +555,10 @@ body {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  background-color: #fff;
   padding: 0 15px; }
   @media screen and (min-width: 960px) {
     .site-footer {
-      position: fixed;
+      position: static;
       bottom: 0;
       padding: 0; } }
 

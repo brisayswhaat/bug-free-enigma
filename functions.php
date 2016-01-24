@@ -120,6 +120,10 @@ function bripiccari_me_scripts() {
 
 	wp_enqueue_script( 'bripiccari-me-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'bripiccari-me-instafeed', get_template_directory_uri() . '/js/instafeed.js', array('jquery'), '20160109', true);
+
+	wp_enqueue_script( 'bripiccari-me-site-js', get_template_directory_uri() . '/js/site.js', array('jquery'), '20160109', true);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

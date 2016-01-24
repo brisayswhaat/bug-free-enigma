@@ -34,3 +34,18 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: $font-size-title;
 	}
 }
+
+.page-title {
+	font-family: $brand-sans-serif;
+	color: $white;
+	font-size: $font-size-title;
+	letter-spacing: 1.2px;
+	margin-top: 0;
+}
+
+.widget-header {
+	font-family: $brand-sans-serif;
+	color: $white;
+	font-size: $font-size-body;
+	letter-spacing: 1.2px;
+}

@@ -43,6 +43,7 @@ body {
 .about-container {
     @include outer-container;
     margin: 0 auto;
+    padding-top: 150px;
 }
 
 .headline {

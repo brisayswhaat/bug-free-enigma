@@ -21,8 +21,12 @@ big {
 // Body Copy
 .body-copy {
 	font-family: $brand-serif;
-	color: $brand-gray;
+	color: $white;
 	font-size: $font-size-small;
+	font-weight: $font-weight-regular;
+	text-align: left;
+	line-height: 1.4;
+	letter-spacing: .5px;
 }
 
 //	Footer Copy Styles

@@ -8,7 +8,7 @@
     padding: 0 15px;
 
     @include media($screen-large) {
-        @include position(fixed, null null 0);
+        @include position(static, null null 0);
         padding: 0;
     }
 }

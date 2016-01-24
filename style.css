@@ -243,6 +243,19 @@ h1, h2, h3, h4, h5, h6 {
     .headline-largest {
       font-size: 3.75rem; } }
 
+.page-title {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 3.75rem;
+  letter-spacing: 1.2px;
+  margin-top: 0; }
+
+.widget-header {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 1.75rem;
+  letter-spacing: 1.2px; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -260,8 +273,12 @@ big {
 
 .body-copy {
   font-family: "Merriweather", Georgia, Times, serif;
-  color: #363636;
-  font-size: 1.5rem; }
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: .5px; }
 
 .site-footer .fa {
   display: inline-block;
@@ -458,7 +475,8 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 150px; }
   .about-container::after {
     clear: both;
     content: "";
@@ -495,12 +513,14 @@ body {
   .currently-widgets:last-child {
     margin-right: 0; }
 
-.currently-insta .instafeed {
-  width: 100%; }
-  .currently-insta .instafeed a {
-    display: inline-block;
-    width: 32%;
-    margin: 0 2px; }
+.currently-insta {
+  padding-top: 50px; }
+  .currently-insta .instafeed {
+    width: 100%; }
+    .currently-insta .instafeed a {
+      display: inline-block;
+      width: 32%;
+      margin: 0 2px; }
 
 .site-footer {
   height: 120px;
@@ -537,7 +557,7 @@ body {
   padding: 0 15px; }
   @media screen and (min-width: 960px) {
     .site-footer {
-      position: fixed;
+      position: static;
       bottom: 0;
       padding: 0; } }
 

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package bug-free-enigma
+ * @package bug-free-enigma-v2
  */
 
 /**
@@ -13,23 +13,23 @@
  * See: https://jetpack.me/support/infinite-scroll/
  * See: https://jetpack.me/support/responsive-videos/
  */
-function bripiccari_me_jetpack_setup() {
+function httpwww_bripiccari_me_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'bripiccari_me_infinite_scroll_render',
+		'render'    => 'httpwww_bripiccari_me_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
-} // end function bripiccari_me_jetpack_setup
-add_action( 'after_setup_theme', 'bripiccari_me_jetpack_setup' );
+}
+add_action( 'after_setup_theme', 'httpwww_bripiccari_me_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function bripiccari_me_infinite_scroll_render() {
+function httpwww_bripiccari_me_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
@@ -38,4 +38,4 @@ function bripiccari_me_infinite_scroll_render() {
 		    get_template_part( 'template-parts/content', get_post_format() );
 		endif;
 	}
-} // end function bripiccari_me_infinite_scroll_render
+}

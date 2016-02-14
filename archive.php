@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package bug-free-enigma
+ * @package bug-free-enigma-v2
  */
 
 get_header(); ?>

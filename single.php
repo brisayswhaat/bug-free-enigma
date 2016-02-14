@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package bug-free-enigma
+ * @package bug-free-enigma-v2
  */
 
 get_header(); ?>

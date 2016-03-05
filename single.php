@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package bug-free-enigma-v2
+ * @package bug-free-enigma
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="post" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -31,5 +31,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

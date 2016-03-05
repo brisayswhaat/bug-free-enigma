@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package bug-free-enigma-v2
+ * @package bug-free-enigma
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

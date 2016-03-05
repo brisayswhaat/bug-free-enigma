@@ -1,9 +1,71 @@
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-@import "links";
+.site-header {
+    @include span-columns(12 of 12);
+    background-color: $white;
+    height: 100%;
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-@import "menus";
+    @include media($screen-large) {
+        background: none;
+        height: auto;
+    }
+}
+
+.main-navigation {
+    @include position(relative, null 0 null null);
+    margin: 0 auto;
+    text-align: center;
+
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    @include media($screen-large) {
+        @include span-columns(3.5 of 12);
+        float: right;
+        padding-top: 50px;
+    }
+}
+
+.main-navigation-link {
+    padding: 15px 25px;
+    margin: 0 auto;
+    display: inline-block;
+    border-left: 1px solid $brand-teal;
+
+    font-family: $brand-sans-serif;
+    font-size: $font-size-navigation;
+    font-weight: $font-weight-regular;
+    color: $brand-teal;
+    text-align: center;
+    text-decoration: none;
+
+    &:first-of-type {
+        border-left: none;
+    }
+
+    .fa.fa-home {
+        font-size: 21px;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    @include media($screen-large) {
+        padding: 10px 25px;
+        border: none;
+
+        color: $white;
+
+        &:hover,
+        &:active {
+            color: $brand-gray;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+    }
+}

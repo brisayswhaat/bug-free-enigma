@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package bug-free-enigma-v2
+ * @package bug-free-enigma
  */
 
 get_header(); ?>

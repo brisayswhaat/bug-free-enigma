@@ -1,3 +1,52 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
+
+.headline,
+.entry-title {
+	font-family: $brand-serif;
+	font-weight: $font-weight-bold;
+	font-size:  21px;
+	color: $white;
+	line-height: 1.75;
+	letter-spacing: .4px;
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			font-style: italic;
+			color: $brand-gray;
+		}
+	}
+
+	@include media($screen-large) {
+		font-size:  $font-size-body;
+	}
+}
+
+.headline-largest {
+	font-size: 28px;
+	font-weight: $font-weight-heavy;
+
+	@include media($screen-large) {
+		font-size: $font-size-title;
+	}
+}
+
+.page-title {
+	font-family: $brand-sans-serif;
+	color: $white;
+	font-size: $font-size-title;
+	letter-spacing: 1.2px;
+	margin-top: 0;
+}
+
+.widget-header {
+	font-family: $brand-sans-serif;
+	color: $white;
+	font-size: $font-size-body;
+	letter-spacing: 1.2px;
+}

@@ -11,7 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<h6 class="post-date"><?php the_date( 'l, F j, Y @ h:i a'); ?></h6>
+
+		<a href="<?php echo get_permalink( $post->ID ); ?>" class="entry-link"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

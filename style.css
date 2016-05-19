@@ -35,7 +35,7 @@ a:active, a:hover {
   transition: all 0.3s ease-in-out; }
 
 body {
-  font-family: "Merriweather", Georgia, Times, serif;
+  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
   font-size: 14px;
   line-height: 1.75;
   color: #363636; }
@@ -220,6 +220,9 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
@@ -227,42 +230,64 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline,
 .entry-title {
-  font-family: "Merriweather", Georgia, Times, serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
   font-weight: 700;
-  font-size: 21px;
-  color: #fff;
+  color: #41c8b9;
   line-height: 1.75;
   letter-spacing: .4px; }
   .headline a,
   .entry-title a {
-    color: #fff;
-    text-decoration: none; }
+    color: #2a9287;
+    text-decoration: none !important; }
     .headline a:hover, .headline a:active,
     .entry-title a:hover,
     .entry-title a:active {
-      font-style: italic;
-      color: #363636; }
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      color: #195750; }
   @media screen and (min-width: 960px) {
     .headline,
     .entry-title {
       font-size: 1.75rem; } }
 
+a.entry-link {
+  text-decoration: none !important; }
+  a.entry-link:hover .entry-title, a.entry-link:active .entry-title {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    color: #257e74; }
+
 .headline-largest {
   font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 900; }
   @media screen and (min-width: 960px) {
     .headline-largest {
       font-size: 3.75rem; } }
 
 .page-title {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 3.75rem;
   letter-spacing: 1.2px;
   margin-top: 0; }
 
+.post-date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  color: #9c9c9c;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1; }
+
 .widget-header {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 1.75rem;
   letter-spacing: 1.2px; }
@@ -283,8 +308,8 @@ big {
   font-size: 125%; }
 
 .body-copy {
-  font-family: "Merriweather", Georgia, Times, serif;
-  color: #fff;
+  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
+  color: #363636;
   font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
@@ -292,27 +317,27 @@ big {
   letter-spacing: .5px; }
 
 .post-edit-link {
-  color: #fff;
+  color: #363636;
   text-decoration: none; }
 
 .site-footer .fa {
   display: inline-block;
-  color: #fff;
+  color: #363636;
   font-size: 1.25rem;
   padding: 0 5px; }
   .site-footer .fa:hover {
-    color: #363636; }
+    color: #e6b226; }
   .site-footer .fa.fa-heart {
     font-size: 0.75rem;
     padding: 0 2px; }
 
 .footer-copy {
-  font-family: "Merriweather", Georgia, Times, serif;
-  color: #fff;
+  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
+  color: #363636;
   font-size: 0.75rem;
   line-height: 2; }
   .footer-copy a {
-    color: #fff;
+    color: #363636;
     text-decoration: none; }
 
 /*--------------------------------------------------------------
@@ -384,7 +409,7 @@ img {
   margin: 0 auto;
   display: inline-block;
   border-left: 1px solid #41c8b9;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 1.15rem;
   font-weight: 400;
   color: #41c8b9;
@@ -400,26 +425,18 @@ img {
     .main-navigation-link {
       padding: 10px 25px;
       border: none;
-      color: #fff; }
+      color: #363636; }
       .main-navigation-link:hover, .main-navigation-link:active {
-        color: #363636; }
+        color: #e6b226; }
       .main-navigation-link .mobile-only {
         display: none; } }
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-html {
-  font-size: 13px; }
-  @media screen and (min-width: 768px) {
-    html {
-      font-size: 14px; } }
-  @media screen and (min-width: 960px) {
-    html {
-      font-size: 16px; } }
-
 body {
-  background-color: #41c8b9; }
+  border-top: 2px solid #41c8b9;
+  background-color: #fff; }
 
 .hero {
   height: auto;
@@ -649,5 +666,41 @@ article {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 10px; }
+
+.site-blog article {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto 100px; }
+  .site-blog article:last-of-type {
+    margin-bottom: 0; }
+
+.entry-header .post-date {
+  margin-bottom: 5px; }
+.entry-header .entry-title {
+  margin-top: 0px;
+  margin-bottom: 15px; }
+
+.entry-content {
+  color: dimgray;
+  line-height: 1.75; }
+
+#post {
+  max-width: 960px;
+  margin: 0 auto !important;
+  width: 90%;
+  float: none;
+  clear: both; }
+
+.entry-meta a {
+  color: #41c8b9; }
+  .entry-meta a:hover, .entry-meta a:active {
+    color: #257e74; }
+
+img {
+  display: block; }
+  img.aligncenter {
+    margin: 0 auto !important; }
+  img.alignright {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */

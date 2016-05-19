@@ -4,21 +4,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline,
 .entry-title {
+	@include font-size(14px);
 	font-family: $brand-serif;
 	font-weight: $font-weight-bold;
-	font-size:  21px;
-	color: $white;
+	color: $brand-teal;
 	line-height: 1.75;
 	letter-spacing: .4px;
 
 	a {
-		color: $white;
-		text-decoration: none;
+		color: darken($brand-teal, 15%);
+		text-decoration: none !important;
 
 		&:hover,
 		&:active {
-			font-style: italic;
-			color: $brand-gray;
+			@include transition(all .4s ease-in-out);
+			color: darken($brand-teal, 30%);
 		}
 	}
 
@@ -27,8 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+a.entry-link {
+	text-decoration: none !important;
+
+	&:hover .entry-title ,
+	&:active .entry-title  {
+		@include transition(all .4s ease-in-out);
+		color: darken($brand-teal, 20%);
+	}
+}
+
 .headline-largest {
-	font-size: 28px;
+	@include font-size(28px);
 	font-weight: $font-weight-heavy;
 
 	@include media($screen-large) {
@@ -42,6 +52,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: $font-size-title;
 	letter-spacing: 1.2px;
 	margin-top: 0;
+}
+
+.post-date {
+	@include font-size(14px);
+	font-family: $brand-sans-serif;
+	color: lighten($brand-gray, 40%);
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1;
 }
 
 .widget-header {

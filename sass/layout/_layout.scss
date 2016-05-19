@@ -1,17 +1,6 @@
-html {
-    font-size: 13px;
-
-    @include media($screen-medium) {
-        font-size: 14px;
-    }
-
-    @include media($screen-large) {
-        font-size: 16px;        // 1rem = 16px
-    }
-}
-
 body {
-    background-color: $brand-teal;
+    border-top: 2px solid $brand-teal;
+    background-color: $white;
 }
 
 .hero {

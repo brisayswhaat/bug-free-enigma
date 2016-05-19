@@ -21,7 +21,7 @@ big {
 // Body Copy
 .body-copy {
 	font-family: $brand-serif;
-	color: $white;
+	color: $brand-gray;
 	font-size: $font-size-small;
 	font-weight: $font-weight-regular;
 	text-align: left;
@@ -31,7 +31,7 @@ big {
 
 //  Link Styles
 .post-edit-link {
-	color: $white;
+	color: $brand-gray;
 	text-decoration: none;
 }
 
@@ -39,12 +39,12 @@ big {
 .site-footer {
 	.fa {
 		display: inline-block;
-		color: $white;
+		color: $brand-gray;
 		font-size: $font-size-footer;
 		padding: 0 5px;
 
 		&:hover {
-			color: $brand-gray;
+			color: $brand-mustard;
 		}
 
 		&.fa-heart {
@@ -56,12 +56,12 @@ big {
 
 .footer-copy {
 	font-family: $brand-serif;
-	color: $white;
+	color: $brand-gray;
 	font-size: $font-size-footer - .5;
 	line-height: 2;
 
 	a {
-		color: $white;
+		color: $brand-gray;
 		text-decoration: none;
 	}
 }

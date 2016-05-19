@@ -20,8 +20,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:700,400,900,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script src="https://use.typekit.net/swx1oyy.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>

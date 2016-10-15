@@ -66,5 +66,9 @@
 
 <?php wp_footer(); ?>
 
+
+<script src="https://use.fontawesome.com/634e437d8d.js"></script>
+<script src="https://use.typekit.net/swx1oyy.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>

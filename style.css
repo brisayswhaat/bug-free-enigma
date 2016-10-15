@@ -254,6 +254,16 @@ img {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff; }
+  body.home {
+    background-color: #e96c15;
+    background-image: -webkit-linear-gradient(-405deg, #e96c15 0%, #ec139d 100%);
+    background-image: linear-gradient(135deg,#e96c15 0%, #ec139d 100%);
+    height: 100vh; }
+
 .currently-widgets {
   float: left;
   display: block;

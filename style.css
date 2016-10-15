@@ -252,6 +252,17 @@ h1, h2, h3, h4, h5, h6 {
     .content--heading {
       font-size: 150px; } }
 
+.subheadline {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #e04272;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .subheadline {
+      font-size: 24px;
+      letter-spacing: 1.5px; } }
+
 .content {
   font-size: 18px;
   font-weight: 300;
@@ -278,6 +289,8 @@ h1, h2, h3, h4, h5, h6 {
       letter-spacing: 1.5px; }
       .content strong {
         font-size: 21px; } }
+  .content.dark, .content.dark a {
+    color: #454545; }
 
 #primary-menu {
   float: left;

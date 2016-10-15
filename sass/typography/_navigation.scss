@@ -30,3 +30,12 @@
     font-weight: 700;
   }
 }
+
+.logo--link {
+  text-decoration: none;
+  color: $ow;
+
+  &:hover {
+    color: $ow;
+  }
+}

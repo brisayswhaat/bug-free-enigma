@@ -6,27 +6,19 @@
 */
 
 get_header(); ?>
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
 
-        <section class="hero">
-            <div class="outer-container">
+<main id="main" class="site-main" role="main">
+  <section class="thats-a-wrap">
 
-
-
-<!-- 
-                    <?php
-                    if ( have_posts() ) {
-                    	while ( have_posts() ) {
-                    		the_post();
-                    		the_content();
-                    	} // end while
-                    } // end if
-                    ?> -->
-
-
-            </div>
-        </section>
-
-    </main>
-</div>
+      <div class="content--homepage">
+        <?php
+          if ( have_posts() ) {
+            while ( have_posts() ) {
+              the_post();
+              the_content();
+            } // end while
+          } // end if
+        ?>
+      </div>
+  </section>
+</main>

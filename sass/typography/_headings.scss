@@ -13,6 +13,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.content--heading {
+  font-family: $serif;
+  font-size: 90px;
+  line-height: 1;
+  font-weight: 700;
+  color: $ow;
+  display: none;
+
+  @include media($screen-medium) {
+    font-size: 120px;
+    display: block;
+  }
+
+  @include media($screen-large) {
+    font-size: 150px;
+  }
+}
+
 
 
 

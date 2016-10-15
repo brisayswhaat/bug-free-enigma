@@ -4,7 +4,7 @@ Theme URI: http://bripiccari.me/wp
 Author: Bri Piccari
 Author URI: http://bripiccari.me
 Description: Sandbox theme build off underscores (http://underscores.me).
-Version: 1.0.0
+Version: 3.0.0
 License: n/a
 Text Domain: bripiccari-me
 Tags:
@@ -35,10 +35,10 @@ a:active, a:hover {
   transition: all 0.3s ease-in-out; }
 
 body {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  font-size: 14px;
-  line-height: 1.75;
-  color: #363636; }
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f2f1f1; }
 
 /*--------------------------------------------------------------
 # Normalize
@@ -228,117 +228,91 @@ th {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
-.headline,
-.entry-title {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
+.logo {
+  font-family: "freight-macro-pro", "Freight Macro Pro", Georgia, Times, serif;
+  font-size: 3.2rem;
   font-weight: 700;
-  color: #41c8b9;
-  line-height: 1.75;
-  letter-spacing: .4px; }
-  .headline a,
-  .entry-title a {
-    color: #2a9287;
-    text-decoration: none !important; }
-    .headline a:hover, .headline a:active,
-    .entry-title a:hover,
-    .entry-title a:active {
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      color: #195750; }
+  color: #f2f1f1; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      font-size: 4.5rem; } }
+
+.content--heading {
+  font-family: "freight-macro-pro", "Freight Macro Pro", Georgia, Times, serif;
+  font-size: 90px;
+  line-height: 1;
+  font-weight: 700;
+  color: #f2f1f1;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .content--heading {
+      font-size: 120px;
+      display: block; } }
   @media screen and (min-width: 960px) {
-    .headline,
-    .entry-title {
-      font-size: 1.75rem; } }
+    .content--heading {
+      font-size: 150px; } }
 
-a.entry-link {
-  text-decoration: none !important; }
-  a.entry-link:hover .entry-title, a.entry-link:active .entry-title {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    color: #257e74; }
-
-.headline-largest {
-  font-size: 28px;
-  font-size: 1.75rem;
-  font-weight: 900; }
-  @media screen and (min-width: 960px) {
-    .headline-largest {
-      font-size: 3.75rem; } }
-
-.page-title {
+.content {
+  font-size: 18px;
+  font-weight: 300;
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 3.75rem;
-  letter-spacing: 1.2px;
-  margin-top: 0; }
-
-.post-date {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #9c9c9c;
-  text-transform: uppercase;
-  font-weight: 400;
   letter-spacing: 1px;
-  line-height: 1; }
-
-.widget-header {
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 1.75rem;
-  letter-spacing: 1.2px; }
-
-p {
-  margin-bottom: 1.5em; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-big {
-  font-size: 125%; }
-
-.body-copy {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  color: #363636;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1.4;
-  letter-spacing: .5px; }
-
-.post-edit-link {
-  color: #363636;
-  text-decoration: none; }
-
-.site-footer .fa {
-  display: inline-block;
-  color: #363636;
-  font-size: 1.25rem;
-  padding: 0 5px; }
-  .site-footer .fa:hover {
-    color: #e6b226; }
-  .site-footer .fa.fa-heart {
-    font-size: 0.75rem;
-    padding: 0 2px; }
-
-.footer-copy {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  color: #363636;
-  font-size: 0.75rem;
-  line-height: 2; }
-  .footer-copy a {
-    color: #363636;
+  margin-top: -15px;
+  color: #f2f1f1; }
+  .content strong {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: -25px;
+    display: block; }
+  .content a {
+    color: #f2f1f1;
     text-decoration: none; }
+    .content a:hover {
+      text-decoration: underline; }
+    .content a:nth-of-type(4n) {
+      padding-top: 40px;
+      display: block; }
+  @media screen and (min-width: 768px) {
+    .content {
+      font-size: 24px;
+      letter-spacing: 1.5px; }
+      .content strong {
+        font-size: 21px; } }
+
+#primary-menu {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #primary-menu:last-child {
+    margin-right: 0; }
+
+.menu-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  margin: -15px 0 0;
+  padding: 0;
+  display: inline-block; }
+  .menu-item:last-child {
+    margin-right: 0; }
+
+.menu-item a {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f2f1f1;
+  text-decoration: none;
+  letter-spacing: 1px; }
+  .menu-item a:hover {
+    color: #f2f1f1;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #f2f1f1; }
+  .menu-item a:active, .menu-item a.active {
+    color: #f2f1f1;
+    font-weight: 700; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -351,9 +325,6 @@ html {
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
-
-body {
-  background: #fff; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -374,72 +345,51 @@ img {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #fff;
-  height: 100%; }
+  background-color: #e96c15;
+  background-image: -webkit-linear-gradient(-405deg, #e96c15 0%, #ec139d 100%);
+  background-image: linear-gradient(135deg,#e96c15 0%, #ec139d 100%);
+  height: 90px; }
   .site-header:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 960px) {
-    .site-header {
-      background: none;
-      height: auto; } }
+  .site-header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center; }
+    .site-header .logo:last-child {
+      margin-right: 0; }
 
 .main-navigation {
-  position: relative;
-  right: 0;
-  margin: 0 auto;
-  text-align: center; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .main-navigation:last-child {
+    margin-right: 0; }
   .main-navigation ul, .main-navigation li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block; }
-  @media screen and (min-width: 960px) {
-    .main-navigation {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 27.49666%;
-      float: right;
-      padding-top: 50px; }
-      .main-navigation:last-child {
-        margin-right: 0; } }
+    list-style-type: none; }
 
-.main-navigation-link {
-  padding: 15px 25px;
-  margin: 0 auto;
-  display: inline-block;
-  border-left: 1px solid #41c8b9;
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: #41c8b9;
-  text-align: center;
-  text-decoration: none; }
-  .main-navigation-link:first-of-type {
-    border-left: none; }
-  .main-navigation-link .fa.fa-home {
-    font-size: 21px; }
-  .main-navigation-link .mobile-only {
-    display: inline-block; }
-  @media screen and (min-width: 960px) {
-    .main-navigation-link {
-      padding: 10px 25px;
-      border: none;
-      color: #363636; }
-      .main-navigation-link:hover, .main-navigation-link:active {
-        color: #e6b226; }
-      .main-navigation-link .mobile-only {
-        display: none; } }
+.home .site-header {
+  background: none; }
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 body {
-  border-top: 2px solid #41c8b9;
-  background-color: #fff; }
+  height: 100%;
+  width: 100%; }
+  body.page-template-homepage .site {
+    background-color: #e96c15;
+    background-image: -webkit-linear-gradient(-405deg, #e96c15 0%, #ec139d 100%);
+    background-image: linear-gradient(135deg,#e96c15 0%, #ec139d 100%);
+    height: 100vh; }
 
-.hero {
-  height: auto;
+.thats-a-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -458,137 +408,23 @@ body {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  min-height: 75vh;
-  padding: 40px 0; }
-  @media screen and (min-width: 960px) {
-    .hero {
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto;
-      height: 75vh;
-      width: 100%;
-      padding: 0; }
-      .hero::after {
-        clear: both;
-        content: "";
-        display: table; } }
-
-.outer-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  width: 90%;
-  margin: 0 auto; }
-  @media screen and (min-width: 960px) {
-    .outer-container {
-      width: 100%; } }
-
-.about-container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   margin: 0 auto;
-  padding-top: 150px; }
-  .about-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .about-container .body-copy {
-    font-size: 18px; }
-
-.headline {
-  padding: 0;
-  margin: 0 0 10px; }
-  .headline li {
-    list-style-type: none;
-    display: inline; }
+  padding: 50px 15px; }
+  .thats-a-wrap:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    .thats-a-wrap {
+      padding: 80px; } }
   @media screen and (min-width: 960px) {
-    .headline li {
-      display: block; } }
+    .thats-a-wrap {
+      padding: 50px 150px 50px;
+      max-width: 1480px; } }
 
-.text-wrap {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  display: inline-block;
-  float: left; }
-  .text-wrap:last-child {
-    margin-right: 0; }
-
-#post {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  #post:last-child {
-    margin-right: 0; }
-
-article {
-  padding-top: 25px; }
-
-.entry-meta a {
-  color: #fff;
-  text-decoration: none; }
-
-.entry-footer .cat-links,
-.entry-footer .edit-link {
-  display: block;
-  margin: 10px 0; }
-  .entry-footer .cat-links a,
-  .entry-footer .edit-link a {
-    color: #fff;
-    text-decoration: none; }
-
-.comment-form-comment .comment,
-.comment-form-comment textarea {
-  display: block; }
-.comment-form-comment textarea {
-  margin-top: 15px;
-  border: none;
-  padding: 10px; }
-
-.navigation.post-navigation {
-  display: none; }
-
-.comments-area {
-  padding: 25px 0; }
-  .comments-area .comment-form a {
-    color: #fff;
-    text-decoration: none; }
-
-.form-submit input {
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #41c8b9;
-  padding: 10px 30px; }
-  .form-submit input:hover {
-    background-color: #41c8b9;
-    color: #fff; }
+.content--homepage {
+  padding: 50px 0; }
+  @media screen and (min-width: 768px) {
+    .content--homepage {
+      padding: 20px 0; } }
 
 .currently-widgets {
   float: left;
@@ -681,7 +517,7 @@ article {
   margin-bottom: 15px; }
 
 .entry-content {
-  color: dimgray;
+  color: white;
   line-height: 1.75; }
 
 #post {
@@ -690,11 +526,6 @@ article {
   width: 90%;
   float: none;
   clear: both; }
-
-.entry-meta a {
-  color: #41c8b9; }
-  .entry-meta a:hover, .entry-meta a:active {
-    color: #257e74; }
 
 img {
   display: block; }

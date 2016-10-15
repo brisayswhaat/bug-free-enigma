@@ -1,22 +1,19 @@
 // Defined Variables
+  $sans: 'proxima-nova', 'Proxima Nova', Helvetica, Arial, sans-serif;
+  $serif: 'freight-macro-pro', 'Freight Macro Pro', Georgia, Times, serif;
 
-  $brand-sans-serif: 'proxima-nova', 'Proxima Nova', Helvetica, Arial, sans-serif;
-  $brand-serif: 'abril-text', 'Abril Text', Georgia, Times, serif;
-
-  $font-weight-light:   300;
-  $font-weight-regular: 400;
-  $font-weight-bold:    700;
-  $font-weight-heavy:   900;
+  $light:   300;
+  $regular: 400;
+  $bold:    700;
 
   // 1rem = 14px
-  $font-size-title:         3.75rem;        //  60 pixels
-  $font-size-body:          1.75rem;        //  28 pixels
-  $font-size-navigation:    1.15rem;
-  $font-size-small:         1.5rem;
-  $font-size-footer:        1.25rem;
+  $outlandish:         13.750rem;
+  $headline:            1.313rem;
+  $subheadline:           1.5rem;
+  $copy:                1.125rem;
+  $footer:               0.75rem;
 
 //  Links
-
 a {
     &:active,
     &:hover {
@@ -26,10 +23,9 @@ a {
 
 
 // Base
-
 body {
-    font-family: $brand-serif;
-    font-size: 14px;
-    line-height: 1.75;
-    color: $brand-gray;
+    font-family: $sans;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $ow;
 }

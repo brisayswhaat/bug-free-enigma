@@ -1,0 +1,32 @@
+#primary-menu {
+  @include span-columns(12);
+}
+
+.menu-item {
+  @include span-columns(4 of 12);
+  text-align: center;
+  margin: -15px 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.menu-item a{
+  font-family: $sans;
+  font-weight: 300;
+  font-size: 18px;
+  color: $ow;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $ow;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $ow;
+  }
+
+  &:active,
+  &.active {
+    color: $ow;
+    font-weight: 700;
+  }
+}

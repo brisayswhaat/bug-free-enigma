@@ -19,10 +19,6 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-<script src="https://use.typekit.net/swx1oyy.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>
@@ -31,16 +27,10 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<nav id="navigation" class="main-navigation" role="navigation">
-			<ul>
-				<li>
-					<a href="/" title="Go Home"  class="main-navigation-link"><i class="fa fa-home"></i></a>
-				</li>
-				<li>
-					<a href="/words" title="Blog" class="main-navigation-link">/ words</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="logo">Bri.</div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

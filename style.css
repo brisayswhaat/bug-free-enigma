@@ -1,706 +1,79 @@
-/*!
-Theme Name: bug-free-enigma
-Theme URI: http://bripiccari.me/wp
-Author: Bri Piccari
-Author URI: http://bripiccari.me
-Description: Sandbox theme build off underscores (http://underscores.me).
-Version: 1.0.0
-License: n/a
-Text Domain: bripiccari-me
-Tags:
+/*
+Error: Invalid CSS after "...a, Times, serif": expected selector or at-rule, was "."
+        on line 3 of sass/variables-site/_typography.scss
+        from line 2 of sass/variables-site/_variables-site.scss
+        from line 29 of sass/style.scss
 
-This theme was based off of the underscores theme, created by Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+1: // Defined Variables
+2:   $sans: 'proxima-nova', 'Proxima Nova', Helvetica, Arial, sans-serif;
+3:   $serif: 'freight-macro-pro', 'Freight Macro Pro', Georgia, Times, serif.
+4: 
+5:   $light:   300;
+6:   $regular: 400;
+7:   $bold:    700;
+8: 
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+Backtrace:
+sass/variables-site/_typography.scss:3
+sass/variables-site/_variables-site.scss:2
+sass/style.scss:29
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:309:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.4/lib/listen/listener.rb:149:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.4/lib/listen/listener.rb:149:in `block in _wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.4/lib/listen/listener.rb:138:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.4/lib/listen/listener.rb:138:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.4/lib/listen/listener.rb:42:in `block in start'
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-
---------------------------------------------------------------*/
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-a:active, a:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-body {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  font-size: 14px;
-  line-height: 1.75;
-  color: #363636; }
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden],
-template {
-  display: none; }
-
-a {
-  background-color: transparent; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b,
-strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
-
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-pre {
-  overflow: auto; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-button {
-  overflow: visible; }
-
-button,
-select {
-  text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-input {
-  line-height: normal; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto; }
-
-optgroup {
-  font-weight: bold; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
-/*--------------------------------------------------------------
-# Mixins
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-.headline,
-.entry-title {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  font-weight: 700;
-  color: #41c8b9;
-  line-height: 1.75;
-  letter-spacing: .4px; }
-  .headline a,
-  .entry-title a {
-    color: #2a9287;
-    text-decoration: none !important; }
-    .headline a:hover, .headline a:active,
-    .entry-title a:hover,
-    .entry-title a:active {
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      color: #195750; }
-  @media screen and (min-width: 960px) {
-    .headline,
-    .entry-title {
-      font-size: 1.75rem; } }
-
-a.entry-link {
-  text-decoration: none !important; }
-  a.entry-link:hover .entry-title, a.entry-link:active .entry-title {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    color: #257e74; }
-
-.headline-largest {
-  font-size: 28px;
-  font-size: 1.75rem;
-  font-weight: 900; }
-  @media screen and (min-width: 960px) {
-    .headline-largest {
-      font-size: 3.75rem; } }
-
-.page-title {
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 3.75rem;
-  letter-spacing: 1.2px;
-  margin-top: 0; }
-
-.post-date {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #9c9c9c;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1; }
-
-.widget-header {
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 1.75rem;
-  letter-spacing: 1.2px; }
-
-p {
-  margin-bottom: 1.5em; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-big {
-  font-size: 125%; }
-
-.body-copy {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  color: #363636;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 1.4;
-  letter-spacing: .5px; }
-
-.post-edit-link {
-  color: #363636;
-  text-decoration: none; }
-
-.site-footer .fa {
-  display: inline-block;
-  color: #363636;
-  font-size: 1.25rem;
-  padding: 0 5px; }
-  .site-footer .fa:hover {
-    color: #e6b226; }
-  .site-footer .fa.fa-heart {
-    font-size: 0.75rem;
-    padding: 0 2px; }
-
-.footer-copy {
-  font-family: "abril-text", "Abril Text", Georgia, Times, serif;
-  color: #363636;
-  font-size: 0.75rem;
-  line-height: 2; }
-  .footer-copy a {
-    color: #363636;
-    text-decoration: none; }
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
-
-body {
-  background: #fff; }
-
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-.site-header {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  background-color: #fff;
-  height: 100%; }
-  .site-header:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 960px) {
-    .site-header {
-      background: none;
-      height: auto; } }
-
-.main-navigation {
-  position: relative;
-  right: 0;
-  margin: 0 auto;
-  text-align: center; }
-  .main-navigation ul, .main-navigation li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block; }
-  @media screen and (min-width: 960px) {
-    .main-navigation {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 27.49666%;
-      float: right;
-      padding-top: 50px; }
-      .main-navigation:last-child {
-        margin-right: 0; } }
-
-.main-navigation-link {
-  padding: 15px 25px;
-  margin: 0 auto;
-  display: inline-block;
-  border-left: 1px solid #41c8b9;
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: #41c8b9;
-  text-align: center;
-  text-decoration: none; }
-  .main-navigation-link:first-of-type {
-    border-left: none; }
-  .main-navigation-link .fa.fa-home {
-    font-size: 21px; }
-  .main-navigation-link .mobile-only {
-    display: inline-block; }
-  @media screen and (min-width: 960px) {
-    .main-navigation-link {
-      padding: 10px 25px;
-      border: none;
-      color: #363636; }
-      .main-navigation-link:hover, .main-navigation-link:active {
-        color: #e6b226; }
-      .main-navigation-link .mobile-only {
-        display: none; } }
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-body {
-  border-top: 2px solid #41c8b9;
-  background-color: #fff; }
-
-.hero {
-  height: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  min-height: 75vh;
-  padding: 40px 0; }
-  @media screen and (min-width: 960px) {
-    .hero {
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto;
-      height: 75vh;
-      width: 100%;
-      padding: 0; }
-      .hero::after {
-        clear: both;
-        content: "";
-        display: table; } }
-
-.outer-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  width: 90%;
-  margin: 0 auto; }
-  @media screen and (min-width: 960px) {
-    .outer-container {
-      width: 100%; } }
-
-.about-container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
-  padding-top: 150px; }
-  .about-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .about-container .body-copy {
-    font-size: 18px; }
-
-.headline {
-  padding: 0;
-  margin: 0 0 10px; }
-  .headline li {
-    list-style-type: none;
-    display: inline; }
-  @media screen and (min-width: 960px) {
-    .headline li {
-      display: block; } }
-
-.text-wrap {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  display: inline-block;
-  float: left; }
-  .text-wrap:last-child {
-    margin-right: 0; }
-
-#post {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  #post:last-child {
-    margin-right: 0; }
-
-article {
-  padding-top: 25px; }
-
-.entry-meta a {
-  color: #fff;
-  text-decoration: none; }
-
-.entry-footer .cat-links,
-.entry-footer .edit-link {
-  display: block;
-  margin: 10px 0; }
-  .entry-footer .cat-links a,
-  .entry-footer .edit-link a {
-    color: #fff;
-    text-decoration: none; }
-
-.comment-form-comment .comment,
-.comment-form-comment textarea {
-  display: block; }
-.comment-form-comment textarea {
-  margin-top: 15px;
-  border: none;
-  padding: 10px; }
-
-.navigation.post-navigation {
-  display: none; }
-
-.comments-area {
-  padding: 25px 0; }
-  .comments-area .comment-form a {
-    color: #fff;
-    text-decoration: none; }
-
-.form-submit input {
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #41c8b9;
-  padding: 10px 30px; }
-  .form-submit input:hover {
-    background-color: #41c8b9;
-    color: #fff; }
-
-.currently-widgets {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-left: 8.5298%;
-  float: left;
-  display: inline-block; }
-  .currently-widgets:last-child {
-    margin-right: 0; }
-
-.currently-insta {
-  padding-top: 50px; }
-  .currently-insta .instafeed {
-    width: 100%; }
-    .currently-insta .instafeed a {
-      display: inline-block;
-      width: 32%;
-      margin: 0 2px; }
-
-.site-footer {
-  height: 120px;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  padding: 0 15px; }
-  @media screen and (min-width: 960px) {
-    .site-footer {
-      position: static;
-      bottom: 0;
-      padding: 0; } }
-
-.social-row {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center; }
-  .social-row ul, .social-row li {
-    list-style-type: none;
-    padding: 10px 0;
-    margin: 0; }
-  .social-row li {
-    display: inline-block; }
-
-.site-info {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 10px; }
-
-.site-blog article {
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto 100px; }
-  .site-blog article:last-of-type {
-    margin-bottom: 0; }
-
-.entry-header .post-date {
-  margin-bottom: 5px; }
-.entry-header .entry-title {
-  margin-top: 0px;
-  margin-bottom: 15px; }
-
-.entry-content {
-  color: dimgray;
-  line-height: 1.75; }
-
-#post {
-  max-width: 960px;
-  margin: 0 auto !important;
-  width: 90%;
-  float: none;
-  clear: both; }
-
-.entry-meta a {
-  color: #41c8b9; }
-  .entry-meta a:hover, .entry-meta a:active {
-    color: #257e74; }
-
-img {
-  display: block; }
-  img.aligncenter {
-    margin: 0 auto !important; }
-  img.alignright {
-    float: right; }
-
-/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...a, Times, serif\": expected selector or at-rule, was \".\"\A         on line 3 of sass/variables-site/_typography.scss\A         from line 2 of sass/variables-site/_variables-site.scss\A         from line 29 of sass/style.scss\A \A 1: // Defined Variables\A 2:   $sans: 'proxima-nova', 'Proxima Nova', Helvetica, Arial, sans-serif;\A 3:   $serif: 'freight-macro-pro', 'Freight Macro Pro', Georgia, Times, serif.\A 4: \A 5:   $light:   300;\A 6:   $regular: 400;\A 7:   $bold:    700;\A 8: "; }

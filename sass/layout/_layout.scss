@@ -1,133 +1,133 @@
-body {
-    border-top: 2px solid $brand-teal;
-    background-color: $white;
-}
-
-.hero {
-    @include size(100% auto);
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(center);
-    min-height: 75vh;
-    padding: 40px 0;
-
-    @include media($screen-large) {
-        @include outer-container;
-        @include size(100% 75vh);
-        padding: 0;
-    }
-}
-
-.outer-container {
-    @include display(flex);
-    @include flex-direction(column);
-    width: 90%;
-    margin: 0 auto;
-
-    @include media($screen-large) {
-        width: 100%;
-    }
-}
-
-.about-container {
-    @include outer-container;
-    margin: 0 auto;
-    padding-top: 150px;
-
-    .body-copy {
-        font-size: 18px;
-    }
-}
-
-.headline {
-    padding: 0;
-    margin: 0 0 10px;
-
-    li {
-        list-style-type: none;
-        display: inline;
-    }
-
-    @include media($screen-large) {
-        li {
-            display: block;
-        }
-    }
-}
-
-.text-wrap {
-    @include span-columns(7 of 12);
-    display: inline-block;
-    float: left;
-}
-
-#post {
-    @include span-columns(10 of 12);
-    @include shift(1);
-}
-
-article {
-    padding-top: 25px;
-}
-
-.entry-meta {
-    a {
-        color: $white;
-        text-decoration: none;
-    }
-}
-
-.entry-footer {
-    .cat-links,
-    .edit-link {
-        display: block;
-        margin: 10px 0;
-
-        a {
-            color: $white;
-            text-decoration: none;
-        }
-    }
-}
-
-.comment-form-comment {
-    .comment,
-    textarea {
-        display: block;
-    }
-
-    textarea {
-        margin-top: 15px;
-        border: none;
-        padding: 10px;
-    }
-}
-
-.navigation.post-navigation {
-    display: none;
-}
-
-.comments-area {
-    padding: 25px 0;
-
-    .comment-form {
-        a {
-            color: $white;
-            text-decoration: none;
-        }
-    }
-}
-
-.form-submit {
-    input {
-        background-color: $white;
-        border: 1px solid $white;
-        color: $brand-teal;
-        padding: 10px 30px;
-
-        &:hover {
-            background-color: $brand-teal;
-            color: $white;
-        }
-    }
-}
+// body {
+//     border-top: 2px solid $brand-teal;
+//     background-color: $white;
+// }
+//
+// .hero {
+//     @include size(100% auto);
+//     @include display(flex);
+//     @include flex-direction(column);
+//     @include justify-content(center);
+//     min-height: 75vh;
+//     padding: 40px 0;
+//
+//     @include media($screen-large) {
+//         @include outer-container;
+//         @include size(100% 75vh);
+//         padding: 0;
+//     }
+// }
+//
+// .outer-container {
+//     @include display(flex);
+//     @include flex-direction(column);
+//     width: 90%;
+//     margin: 0 auto;
+//
+//     @include media($screen-large) {
+//         width: 100%;
+//     }
+// }
+//
+// .about-container {
+//     @include outer-container;
+//     margin: 0 auto;
+//     padding-top: 150px;
+//
+//     .body-copy {
+//         font-size: 18px;
+//     }
+// }
+//
+// .headline {
+//     padding: 0;
+//     margin: 0 0 10px;
+//
+//     li {
+//         list-style-type: none;
+//         display: inline;
+//     }
+//
+//     @include media($screen-large) {
+//         li {
+//             display: block;
+//         }
+//     }
+// }
+//
+// .text-wrap {
+//     @include span-columns(7 of 12);
+//     display: inline-block;
+//     float: left;
+// }
+//
+// #post {
+//     @include span-columns(10 of 12);
+//     @include shift(1);
+// }
+//
+// article {
+//     padding-top: 25px;
+// }
+//
+// .entry-meta {
+//     a {
+//         color: $white;
+//         text-decoration: none;
+//     }
+// }
+//
+// .entry-footer {
+//     .cat-links,
+//     .edit-link {
+//         display: block;
+//         margin: 10px 0;
+//
+//         a {
+//             color: $white;
+//             text-decoration: none;
+//         }
+//     }
+// }
+//
+// .comment-form-comment {
+//     .comment,
+//     textarea {
+//         display: block;
+//     }
+//
+//     textarea {
+//         margin-top: 15px;
+//         border: none;
+//         padding: 10px;
+//     }
+// }
+//
+// .navigation.post-navigation {
+//     display: none;
+// }
+//
+// .comments-area {
+//     padding: 25px 0;
+//
+//     .comment-form {
+//         a {
+//             color: $white;
+//             text-decoration: none;
+//         }
+//     }
+// }
+//
+// .form-submit {
+//     input {
+//         background-color: $white;
+//         border: 1px solid $white;
+//         color: $brand-teal;
+//         padding: 10px 30px;
+//
+//         &:hover {
+//             background-color: $brand-teal;
+//             color: $white;
+//         }
+//     }
+// }

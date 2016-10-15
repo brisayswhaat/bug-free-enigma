@@ -1,67 +1,67 @@
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-big {
-	font-size: 125%;
-}
-
-// Body Copy
-.body-copy {
-	font-family: $brand-serif;
-	color: $brand-gray;
-	font-size: $font-size-small;
-	font-weight: $font-weight-regular;
-	text-align: left;
-	line-height: 1.4;
-	letter-spacing: .5px;
-}
-
-//  Link Styles
-.post-edit-link {
-	color: $brand-gray;
-	text-decoration: none;
-}
-
-//	Footer Copy Styles
-.site-footer {
-	.fa {
-		display: inline-block;
-		color: $brand-gray;
-		font-size: $font-size-footer;
-		padding: 0 5px;
-
-		&:hover {
-			color: $brand-mustard;
-		}
-
-		&.fa-heart {
-			font-size: $font-size-footer - .5;
-			padding: 0 2px;
-		}
-	}
-}
-
-.footer-copy {
-	font-family: $brand-serif;
-	color: $brand-gray;
-	font-size: $font-size-footer - .5;
-	line-height: 2;
-
-	a {
-		color: $brand-gray;
-		text-decoration: none;
-	}
-}
+// p {
+// 	margin-bottom: 1.5em;
+// }
+//
+// dfn, cite, em, i {
+// 	font-style: italic;
+// }
+//
+// blockquote {
+// 	margin: 0 1.5em;
+// }
+//
+// address {
+// 	margin: 0 0 1.5em;
+// }
+//
+// big {
+// 	font-size: 125%;
+// }
+//
+// // Body Copy
+// .body-copy {
+// 	font-family: $brand-serif;
+// 	color: $brand-gray;
+// 	font-size: $font-size-small;
+// 	font-weight: $font-weight-regular;
+// 	text-align: left;
+// 	line-height: 1.4;
+// 	letter-spacing: .5px;
+// }
+//
+// //  Link Styles
+// .post-edit-link {
+// 	color: $brand-gray;
+// 	text-decoration: none;
+// }
+//
+// //	Footer Copy Styles
+// .site-footer {
+// 	.fa {
+// 		display: inline-block;
+// 		color: $brand-gray;
+// 		font-size: $font-size-footer;
+// 		padding: 0 5px;
+//
+// 		&:hover {
+// 			color: $brand-mustard;
+// 		}
+//
+// 		&.fa-heart {
+// 			font-size: $font-size-footer - .5;
+// 			padding: 0 2px;
+// 		}
+// 	}
+// }
+//
+// .footer-copy {
+// 	font-family: $brand-serif;
+// 	color: $brand-gray;
+// 	font-size: $font-size-footer - .5;
+// 	line-height: 2;
+//
+// 	a {
+// 		color: $brand-gray;
+// 		text-decoration: none;
+// 	}
+// }

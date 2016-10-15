@@ -14,7 +14,7 @@ get_header(); ?>
 
 
 
-
+<!-- 
                     <?php
                     if ( have_posts() ) {
                     	while ( have_posts() ) {
@@ -22,7 +22,7 @@ get_header(); ?>
                     		the_content();
                     	} // end while
                     } // end if
-                    ?>
+                    ?> -->
 
 
             </div>

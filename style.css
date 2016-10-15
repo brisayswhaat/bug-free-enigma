@@ -225,6 +225,53 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+.logo {
+  font-family: "freight-macro-pro", "Freight Macro Pro", Georgia, Times, serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #f2f1f1; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      font-size: 4.5rem; } }
+
+#primary-menu {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #primary-menu:last-child {
+    margin-right: 0; }
+
+.menu-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  margin: -15px 0 0;
+  padding: 0;
+  display: inline-block; }
+  .menu-item:last-child {
+    margin-right: 0; }
+
+.menu-item a {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f2f1f1;
+  text-decoration: none;
+  letter-spacing: 1px; }
+  .menu-item a:hover {
+    color: #f2f1f1;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #f2f1f1; }
+  .menu-item a:active, .menu-item a.active {
+    color: #f2f1f1;
+    font-weight: 700; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -251,14 +298,47 @@ img {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #e96c15;
+  background-image: -webkit-linear-gradient(-405deg, #e96c15 0%, #ec139d 100%);
+  background-image: linear-gradient(135deg,#e96c15 0%, #ec139d 100%);
+  height: 90px; }
+  .site-header:last-child {
+    margin-right: 0; }
+  .site-header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center; }
+    .site-header .logo:last-child {
+      margin-right: 0; }
+
+.main-navigation {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .main-navigation:last-child {
+    margin-right: 0; }
+  .main-navigation ul, .main-navigation li {
+    list-style-type: none; }
+
+.home .site-header {
+  background: none; }
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 body {
   height: 100%;
-  width: 100%;
-  background-color: #fff; }
-  body.home {
+  width: 100%; }
+  body.page-template-homepage .site {
     background-color: #e96c15;
     background-image: -webkit-linear-gradient(-405deg, #e96c15 0%, #ec139d 100%);
     background-image: linear-gradient(135deg,#e96c15 0%, #ec139d 100%);

@@ -1,6 +1,23 @@
-// h1, h2, h3, h4, h5, h6 {
-// 	clear: both;
-// }
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.logo {
+  font-family: $serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: $ow;
+
+  @include media($screen-medium) {
+    font-size: 4.5rem;
+  }
+}
+
+
+
+
+
+
 //
 // .headline,
 // .entry-title {

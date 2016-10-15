@@ -13,12 +13,12 @@
 
 .main-navigation {
   @include span-columns(12);
+  padding-bottom: 25px;
 
   ul, li {
     list-style-type: none;
   }
 }
-
 
 
 // Home page specific styles

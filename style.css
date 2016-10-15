@@ -340,6 +340,27 @@ h1, h2, h3, h4, h5, h6 {
   .logo--link:hover {
     color: #f2f1f1; }
 
+.link.sans {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #454545;
+  text-decoration: none; }
+  .link.sans:hover {
+    color: #f2f1f1; }
+
+.button {
+  border: 1px solid #ec139d;
+  padding: 15px 20px;
+  margin: 15px 0;
+  display: block;
+  max-width: 200px;
+  text-align: center; }
+  .button:hover, .button:active {
+    border: 1px solid #fff;
+    background: #e04272; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -392,7 +413,8 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 25px; }
   .main-navigation:last-child {
     margin-right: 0; }
   .main-navigation ul, .main-navigation li {
@@ -445,7 +467,7 @@ body {
   @media screen and (min-width: 960px) {
     .thats-a-wrap {
       padding: 50px 150px 50px;
-      max-width: 1480px; } }
+      max-width: 1440px; } }
 
 .content--homepage {
   padding: 50px 0; }
@@ -453,14 +475,49 @@ body {
     .content--homepage {
       padding: 20px 0; } }
 
+.content--columns {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .content--columns:last-child {
+    margin-right: 0; }
+  .content--columns .column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .content--columns .column:last-child {
+      margin-right: 0; }
+    .content--columns .column:nth-of-type(2) {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 27.49666%;
+      margin-left: 4.2649%; }
+      .content--columns .column:nth-of-type(2):last-child {
+        margin-right: 0; }
+  @media screen and (min-width: 960px) {
+    .content--columns {
+      max-width: 1440px;
+      margin: 0 auto; } }
+
 .social-links ul, .social-links li {
   list-style-type: none;
   display: inline-block;
   margin: 0;
   padding: 0; }
+  .social-links ul .icon, .social-links li .icon {
+    color: #454545; }
+    .social-links ul .icon:hover, .social-links ul .icon:active, .social-links li .icon:hover, .social-links li .icon:active {
+      color: #e04272; }
   .social-links ul i, .social-links li i {
-    font-size: 21px;
+    font-size: 24px;
     margin: 0 5px; }
+
+.contact-me {
+  margin: 85px 0 0;
+  display: block; }
 
 .currently-widgets {
   float: left;

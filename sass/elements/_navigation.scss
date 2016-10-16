@@ -5,93 +5,44 @@
   ul, li {
     list-style-type: none;
   }
+
+  @include media($screen-xlarge) {
+    @include span-columns(4 of 12);
+    @include shift(6);
+    padding-bottom: 0;
+    display: inline-block;
+    margin-top: 60px;
+  }
 }
 
 #primary-menu {
   @include span-columns(12);
+  padding: 0 10px;
+
+  @include media($screen-medium) {
+    padding: 0;
+  }
+
+  @include media($screen-xlarge) {
+  }
 }
 
 .menu-item {
-  @include span-columns(4 of 12);
+  @include span-columns(3 of 12);
+  @include shift(.75);
   text-align: center;
   margin: -15px 0 0;
   padding: 0;
-  display: inline-block;
+
+  &:first-of-type{
+    @include span-columns(5 of 12);
+  }
+
+  @include media($screen-medium){
+    @include span-columns(4 of 12);
+
+    &:first-of-type {
+      @include span-columns(4 of 12);
+    }
+  }
 }
-
-
-
-
-
-
-// .site-header {
-//     @include span-columns(12 of 12);
-//     // background-color: $white;
-//     height: 100%;
-//
-//     @include media($screen-large) {
-//         background: none;
-//         height: auto;
-//     }
-// }
-//
-// .main-navigation {
-//     @include position(relative, null 0 null null);
-//     margin: 0 auto;
-//     text-align: center;
-//
-//     ul, li {
-//         list-style-type: none;
-//         padding: 0;
-//         margin: 0;
-//         display: inline-block;
-//     }
-//
-//     @include media($screen-large) {
-//         @include span-columns(3.5 of 12);
-//         float: right;
-//         padding-top: 50px;
-//     }
-// }
-//
-// .main-navigation-link {
-//     padding: 15px 25px;
-//     margin: 0 auto;
-//     display: inline-block;
-//     // border-left: 1px solid $brand-teal;
-//
-//     // font-family: $brand-sans-serif;
-//     // font-size: $font-size-navigation;
-//     // font-weight: $font-weight-regular;
-//     // color: $brand-teal;
-//     text-align: center;
-//     text-decoration: none;
-//
-//     &:first-of-type {
-//         border-left: none;
-//     }
-//
-//     .fa.fa-home {
-//         font-size: 21px;
-//     }
-//
-//     .mobile-only {
-//         display: inline-block;
-//     }
-//
-//     @include media($screen-large) {
-//         padding: 10px 25px;
-//         border: none;
-//
-//         // color: $brand-gray;
-//
-//         &:hover,
-//         &:active {
-//             // color: $brand-mustard;
-//         }
-//
-//         .mobile-only {
-//             display: none;
-//         }
-//     }
-// }

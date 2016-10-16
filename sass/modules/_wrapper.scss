@@ -1,16 +1,20 @@
-.thats-a-wrap {
+.site-content {
   @include span-columns(12);
   @include display(flex);
   @include flex-direction(column);
   margin: 0 auto;
   padding: 50px 15px;
+  height: auto;
 
   @include media($screen-medium) {
     padding: 80px;
   }
 
   @include media($screen-large) {
-    padding: 50px 150px 50px;
-    max-width: 1440px;
+    padding: 50px 35px 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
   }
 }

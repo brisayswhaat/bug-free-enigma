@@ -49,16 +49,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "elements/elements";
 
 /*--------------------------------------------------------------
-# Navigation
+# Modules
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+@import "modules/modules";
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 @import "layout/layout";
-@import "layout/sidebar";
-@import "layout/footer";
-@import "layout/blog";
-@import "layout/single";
-@import 'layout/comments';

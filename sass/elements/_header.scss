@@ -16,10 +16,21 @@
   }
 
   @include media($screen-xlarge) {
+    margin: 0 auto;
+    float: none;
+    clear: both;
+  }
+}
+
+.header-wrapper {
+
+  @include media($screen-xlarge) {
     max-width: 1280px;
     margin: 0 auto;
     float: none;
     clear: both;
+    height: 120px;
+    display: block;
   }
 }
 

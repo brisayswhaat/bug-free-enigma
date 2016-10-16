@@ -414,10 +414,18 @@ img {
           margin-right: 0; } }
   @media screen and (min-width: 1050px) {
     .site-header {
-      max-width: 1280px;
       margin: 0 auto;
       float: none;
       clear: both; } }
+
+@media screen and (min-width: 1050px) {
+  .header-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+    height: 120px;
+    display: block; } }
 
 .home .site-header {
   background: none; }

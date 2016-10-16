@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu-item a {
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   color: #f2f1f1;
   text-decoration: none;
   letter-spacing: 1px; }
@@ -313,6 +313,9 @@ h1, h2, h3, h4, h5, h6 {
   .menu-item a:active, .menu-item a.active {
     color: #f2f1f1;
     font-weight: 700; }
+  @media screen and (min-width: 768px) {
+    .menu-item a {
+      font-size: 18px; } }
 
 .logo--link {
   text-decoration: none;
@@ -404,21 +407,32 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  padding: 0 10px; }
   #primary-menu:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    #primary-menu {
+      padding: 0; } }
 
 .menu-item {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
+  width: 23.23176%;
+  margin-left: 6.39735%;
   text-align: center;
   margin: -15px 0 0;
-  padding: 0;
-  display: inline-block; }
+  padding: 0; }
   .menu-item:last-child {
     margin-right: 0; }
+  .menu-item:first-of-type {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .menu-item:first-of-type:last-child {
+      margin-right: 0; }
 
 .site-footer {
   height: 120px;

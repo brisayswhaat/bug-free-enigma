@@ -2,7 +2,7 @@
 .menu-item a{
   font-family: $sans;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   color: $ow;
   text-decoration: none;
   letter-spacing: 1px;
@@ -17,6 +17,10 @@
   &.active {
     color: $ow;
     font-weight: 700;
+  }
+
+  @include media($screen-medium) {
+    font-size: 18px;
   }
 }
 

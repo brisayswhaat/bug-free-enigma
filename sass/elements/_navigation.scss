@@ -12,7 +12,7 @@
   padding: 0 10px;
 
   @include media($screen-medium) {
-  padding: 0;
+    padding: 0;
   }
 }
 
@@ -25,5 +25,13 @@
 
   &:first-of-type{
     @include span-columns(5 of 12);
+  }
+
+  @include media($screen-medium){
+    @include span-columns(4 of 12);
+
+    &:first-of-type {
+      @include span-columns(4 of 12);
+    }
   }
 }

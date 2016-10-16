@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.2rem;
   font-weight: 700;
   color: #f2f1f1; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .logo {
       font-size: 4.5rem; } }
 
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #f2f1f1;
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .content--heading {
       font-size: 120px;
       display: block; } }
@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #e04272;
   margin-bottom: 15px;
   text-transform: uppercase; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .subheadline {
       font-size: 24px;
       letter-spacing: 1.5px; } }
@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
     .content a:nth-of-type(4n) {
       padding-top: 40px;
       display: block; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .content {
       font-size: 24px;
       letter-spacing: 1.5px; }
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   .menu-item a:active, .menu-item a.active {
     color: #f2f1f1;
     font-weight: 700; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .menu-item a {
       font-size: 18px; } }
 
@@ -384,7 +384,7 @@ img {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    margin: 10px auto;
+    margin: 0px auto 15px;
     text-align: center; }
     .site-header .logo:last-child {
       margin-right: 0; }
@@ -411,7 +411,7 @@ img {
   padding: 0 10px; }
   #primary-menu:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     #primary-menu {
       padding: 0; } }
 
@@ -433,6 +433,21 @@ img {
     width: 40.29137%; }
     .menu-item:first-of-type:last-child {
       margin-right: 0; }
+  @media screen and (min-width: 570px) {
+    .menu-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .menu-item:last-child {
+        margin-right: 0; }
+      .menu-item:first-of-type {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .menu-item:first-of-type:last-child {
+          margin-right: 0; } }
 
 .site-footer {
   height: 120px;
@@ -520,7 +535,7 @@ img {
   padding: 50px 15px; }
   .thats-a-wrap:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .thats-a-wrap {
       padding: 80px; } }
   @media screen and (min-width: 960px) {
@@ -559,7 +574,7 @@ body {
 
 .content--homepage {
   padding: 50px 0; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 570px) {
     .content--homepage {
       padding: 20px 0; } }
 

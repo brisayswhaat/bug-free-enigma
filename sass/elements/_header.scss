@@ -6,7 +6,7 @@
 
   .logo {
     @include span-columns(12);
-    margin: 10px auto;
+    margin: 0px auto 15px;
     text-align: center;
   }
 }

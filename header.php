@@ -27,7 +27,7 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="logo">Bri.</div>
+		<a href="/" class="logo logo--link">Bri.</a>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->

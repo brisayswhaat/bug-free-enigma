@@ -1,0 +1,27 @@
+.link.sans {
+  font-family: $sans;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: $ob;
+  text-decoration: none;
+
+  &:hover {
+    color: $ow;
+  }
+}
+
+.button {
+  border: 1px solid $magenta;
+  padding: 15px 20px;
+  margin: 15px 0;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+
+  &:hover,
+  &:active {
+    border: 1px solid #fff;
+    background: $magenta-light;
+  }
+}

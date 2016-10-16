@@ -5,6 +5,14 @@
   ul, li {
     list-style-type: none;
   }
+
+  @include media($screen-xlarge) {
+    @include span-columns(4 of 12);
+    @include shift(6);
+    padding-bottom: 0;
+    display: inline-block;
+    margin-top: 60px;
+  }
 }
 
 #primary-menu {
@@ -13,6 +21,9 @@
 
   @include media($screen-medium) {
     padding: 0;
+  }
+
+  @include media($screen-xlarge) {
   }
 }
 

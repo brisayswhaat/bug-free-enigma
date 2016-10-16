@@ -388,6 +388,16 @@ img {
     text-align: center; }
     .site-header .logo:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 1050px) {
+      .site-header .logo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%;
+        max-width: 1440px;
+        height: 90px; }
+        .site-header .logo:last-child {
+          margin-right: 0; } }
 
 .home .site-header {
   background: none; }
@@ -402,6 +412,18 @@ img {
     margin-right: 0; }
   .main-navigation ul, .main-navigation li {
     list-style-type: none; }
+  @media screen and (min-width: 1050px) {
+    .main-navigation {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 51.17883%;
+      padding-bottom: 0;
+      display: inline-block;
+      margin-top: 60px; }
+      .main-navigation:last-child {
+        margin-right: 0; } }
 
 #primary-menu {
   float: left;

@@ -10,8 +10,13 @@ body {
   }
 }
 
-.content--homepage {
+.wrapped {
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-content(center);
   padding: 50px 0;
+  width: 100%;
+  height: 100%;
 
   @include media($screen-medium) {
     padding: 20px 0;

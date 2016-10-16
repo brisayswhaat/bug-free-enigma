@@ -1,0 +1,18 @@
+body {
+  @include size(100%);
+
+  &.page-template-homepage {
+    .site {
+      @include linear-gradient(135deg, $orange 0%, $magenta 100%);
+      height: 100vh;
+    }
+  }
+}
+
+.content--homepage {
+  padding: 50px 0;
+
+  @include media($screen-medium) {
+    padding: 20px 0;
+  }
+}

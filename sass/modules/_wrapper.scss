@@ -1,0 +1,16 @@
+.thats-a-wrap {
+  @include span-columns(12);
+  @include display(flex);
+  @include flex-direction(column);
+  margin: 0 auto;
+  padding: 50px 15px;
+
+  @include media($screen-medium) {
+    padding: 80px;
+  }
+
+  @include media($screen-large) {
+    padding: 50px 150px 50px;
+    max-width: 1440px;
+  }
+}

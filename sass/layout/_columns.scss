@@ -1,0 +1,17 @@
+.content--columns {
+  @include span-columns(12 of 12);
+
+  .column {
+    @include span-columns(8 of 12);
+
+    &:nth-of-type(2) {
+      @include span-columns(3.5 of 12);
+      @include shift(.5);
+    }
+  }
+
+  @include media($screen-large) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,35 @@
+// Navigation
+.menu-item a{
+  font-family: $sans;
+  font-weight: 300;
+  font-size: 18px;
+  color: $ow;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $ow;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $ow;
+  }
+
+  &:active,
+  &.active {
+    color: $ow;
+    font-weight: 700;
+  }
+}
+
+.logo--link {
+  text-decoration: none;
+  color: $ow;
+
+  &:hover {
+    color: $ow;
+  }
+}
+
+// General Link Styles
 .link.sans {
   font-family: $sans;
   font-size: 16px;

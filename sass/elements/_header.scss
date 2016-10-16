@@ -1,0 +1,19 @@
+.site-header {
+  @include span-columns(12 of 12);
+  @include linear-gradient(135deg, $orange 0%, $magenta 100%);
+  height: auto;
+  z-index: 90;
+
+  .logo {
+    @include span-columns(12);
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+// Home page specific styles
+.home {
+  .site-header {
+    background: none;
+  }
+}

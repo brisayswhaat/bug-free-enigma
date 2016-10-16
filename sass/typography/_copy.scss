@@ -45,3 +45,14 @@
     margin-bottom: 25px;
   }
 }
+
+.footer-copy p {
+  font-family: $sans;
+  font-weight: 300;
+  font-size: 13px;
+  color: #fff;
+
+  @include media($screen-medium) {
+    font-size: 14px;
+  }
+}

@@ -299,6 +299,15 @@ h1, h2, h3, h4, h5, h6 {
   .content.dark {
     margin-bottom: 25px; }
 
+.footer-copy p {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #fff; }
+  @media screen and (min-width: 570px) {
+    .footer-copy p {
+      font-size: 14px; } }
+
 .menu-item a {
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -343,6 +352,12 @@ h1, h2, h3, h4, h5, h6 {
   .button:hover, .button:active {
     border: 1px solid #fff;
     background: #e04272; }
+
+.footer-copy a {
+  color: #f2f1f1;
+  text-decoration: none; }
+  .footer-copy a:hover, .footer-copy a:active {
+    color: #454545; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -394,10 +409,15 @@ img {
         display: block;
         margin-right: 2.35765%;
         width: 14.70196%;
-        max-width: 1440px;
         height: 90px; }
         .site-header .logo:last-child {
           margin-right: 0; } }
+  @media screen and (min-width: 1050px) {
+    .site-header {
+      max-width: 1280px;
+      margin: 0 auto;
+      float: none;
+      clear: both; } }
 
 .home .site-header {
   background: none; }

@@ -11,9 +11,15 @@
 
     @include media($screen-xlarge) {
       @include span-columns(2);
-      max-width: 1440px;
       height: 90px;
     }
+  }
+
+  @include media($screen-xlarge) {
+    max-width: 1280px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
   }
 }
 

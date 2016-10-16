@@ -61,3 +61,14 @@
     background: $magenta-light;
   }
 }
+
+// Footer Link Styles
+.footer-copy a {
+  color: $ow;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $ob;
+  }
+}

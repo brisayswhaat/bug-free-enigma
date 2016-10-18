@@ -1,30 +1,46 @@
-.content {
+.copy {
+  font-family: $sans;
   font-size: 18px;
   font-weight: 300;
-  font-family: $sans;
   letter-spacing: 1px;
-  margin-top: -15px;
-  color: $ow;
 
   strong {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: -25px;
-    display: block;
   }
 
-  a {
+  &.light {
     color: $ow;
-    text-decoration: none;
+  }
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &.dark,
+  &.dark a {
+    color: $ob;
+  }
 
-    &:nth-of-type(4n){
-      padding-top: 40px;
-      display: block;
+  &.dark a:hover {
+    color: $magenta;
+  }
+
+  &.smallest {
+    font-size: 12px;
+
+    @include media($screen-medium) {
+      font-size: 14px;
     }
+  }
+
+  &.larger {
+    font-size: 24px;
+
+    @include media($screen-medium) {
+      font-size: 27px;
+    }
+  }
+
+  &.loud {
+    text-transform: uppercase;
   }
 
   @include media($screen-medium) {
@@ -35,32 +51,18 @@
       font-size: 18px;
     }
   }
-
-  &.dark,
-  &.dark a {
-    color: $ob;
-  }
-
-  &.dark {
-    margin-bottom: 25px;
-  }
-
-  &.content-larger {
-    font-size: 24px;
-
-    @include media($screen-medium) {
-      font-size: 27px;
-    }
-  }
 }
 
-.footer-copy p {
-  font-family: $sans;
-  font-weight: 300;
-  font-size: 13px;
-  color: $ob;
+.content a {
+  color: $ow;
+  text-decoration: none;
 
-  @include media($screen-medium) {
-    font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:nth-of-type(4n){
+    padding-top: 40px;
+    display: block;
   }
 }

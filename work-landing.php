@@ -9,8 +9,10 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
   <section class="wrapped">
 
-    <a href="http://lancasterufi.org" title="Lancaster Urban Farming Initiative" class="">Lancaster Urban Farming Initiative</a>
-    <p class="">Designer, Developer</p>
+    <span class="grouping">
+      <a href="http://lancasterufi.org" title="Lancaster Urban Farming Initiative" class="link sans dark loud">Lancaster Urban Farming Initiative</a>
+      <p class="">Designer, Developer</p>
+    </span>
 
     <a href="http://assetspa.org" title="Assets PA">ASSETS PA</a>
     <p class="">Designer, Developer</p>

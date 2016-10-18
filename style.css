@@ -268,50 +268,48 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 24px;
       letter-spacing: 1.5px; } }
 
-.content {
+.copy {
+  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  letter-spacing: 1px;
-  margin-top: -15px;
-  color: #f2f1f1; }
-  .content strong {
+  letter-spacing: 1px; }
+  .copy strong {
     font-size: 15px;
     font-weight: 700;
-    margin-bottom: -25px;
-    display: block; }
-  .content a {
-    color: #f2f1f1;
-    text-decoration: none; }
-    .content a:hover {
-      text-decoration: underline; }
-    .content a:nth-of-type(4n) {
-      padding-top: 40px;
-      display: block; }
-  @media screen and (min-width: 570px) {
-    .content {
-      font-size: 21px;
-      letter-spacing: 1.5px; }
-      .content strong {
-        font-size: 18px; } }
-  .content.dark, .content.dark a {
+    margin-bottom: -25px; }
+  .copy.light {
+    color: #f2f1f1; }
+  .copy.dark, .copy.dark a {
     color: #454545; }
-  .content.dark {
-    margin-bottom: 25px; }
-  .content.content-larger {
+  .copy.dark a:hover {
+    color: #ec139d; }
+  .copy.smallest {
+    font-size: 12px; }
+    @media screen and (min-width: 570px) {
+      .copy.smallest {
+        font-size: 14px; } }
+  .copy.larger {
     font-size: 24px; }
     @media screen and (min-width: 570px) {
-      .content.content-larger {
+      .copy.larger {
         font-size: 27px; } }
-
-.footer-copy p {
-  font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 13px;
-  color: #454545; }
+  .copy.loud {
+    text-transform: uppercase; }
   @media screen and (min-width: 570px) {
-    .footer-copy p {
-      font-size: 14px; } }
+    .copy {
+      font-size: 21px;
+      letter-spacing: 1.5px; }
+      .copy strong {
+        font-size: 18px; } }
+
+.content a {
+  color: #f2f1f1;
+  text-decoration: none; }
+  .content a:hover {
+    text-decoration: underline; }
+  .content a:nth-of-type(4n) {
+    padding-top: 40px;
+    display: block; }
 
 .menu-item a {
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
@@ -346,6 +344,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none; }
   .link.sans:hover {
     color: #f2f1f1; }
+  .link.sans.dark {
+    color: #454545; }
+    .link.sans.dark:hover {
+      color: #ec139d; }
+  .link.sans.loud {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700; }
 
 .button {
   border: 1px solid #ec139d;
@@ -549,7 +555,7 @@ img {
   padding-bottom: 10px; }
 
 .page-template-homepage .site-footer {
-  margin-top: none; }
+  border-top: none; }
 .page-template-homepage .footer-copy p {
   color: #fff; }
 
@@ -597,6 +603,16 @@ img {
     font-size: 24px;
     margin: 0 5px; }
 
+.grouping {
+  display: block;
+  margin: 10px auto 25px; }
+  .grouping a,
+  .grouping p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    padding-bottom: 0; }
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -630,6 +646,9 @@ body {
   padding: 60px 0;
   border-bottom: 1px solid #ec139d;
   margin-bottom: 10px; }
+
+.content {
+  margin-top: -15px; }
 
 .content--columns {
   float: left;

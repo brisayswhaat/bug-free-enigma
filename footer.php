@@ -11,7 +11,7 @@
  </div> <!-- #content -->
 
  <footer id="colophon" class="site-footer footer" role="contentinfo">
-	 <div class="site-info footer-copy">
+	 <div class="site-info copy smallest dark">
 		 <p>Made with <i class="fa fa-heart"></i> in Lancaster, Pennsylvania. <br>&copy; 2016 Bri Piccari. All Rights Reserved.</p>
 	 </div><!-- .site-info -->
  </footer> <!-- #colophon -->

@@ -605,7 +605,13 @@ img {
 
 .grouping {
   display: block;
-  margin: 10px auto; }
+  margin: 10px auto 25px; }
+  .grouping a,
+  .grouping p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    padding-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Layout

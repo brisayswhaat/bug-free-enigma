@@ -11,20 +11,35 @@ get_header(); ?>
 
     <span class="grouping">
       <a href="http://lancasterufi.org" title="Lancaster Urban Farming Initiative" class="link sans dark loud">Lancaster Urban Farming Initiative</a>
-      <p class="">Designer, Developer</p>
+      <p class="copy dark">Designer, Developer</p>
     </span>
 
-    <a href="http://assetspa.org" title="Assets PA">ASSETS PA</a>
-    <p class="">Designer, Developer</p>
+    <span class="grouping">
+      <a href="http://assetspa.org" title="ASSETS PA" class="link sans dark loud">ASSETS PA</a>
+      <p class="copy dark">Designer, Developer</p>
+    </span>
 
-    <a href="http://sandtshoney.com" title="Sandt's Honey">Sandt's Honey</a>
-    <p class="">Designer, Developer</p>
+    <span class="grouping">
+      <a href="http://sandtshoney.com" title="Sandt's Honey" class="link sans dark loud">Sandts Honey</a>
+      <p class="copy dark">Designer</p>
+    </span>
 
-    <a href="http://triode.tv" title="Triode TV">Triode TV</a>
-    <p class="">Designer, Developer</p>
+    <span class="grouping">
+      <a href="http://triode.tv" title="Triode Media Group" class="link sans dark loud">Triode Media Group</a>
+      <p class="copy dark">Designer, Developer</p>
+    </span>
 
-    <a href="/work/pledge-it" title="PLEDGE IT">PLEDGE IT</a>
-    <p class="">Designer, Developer</p>
+    <span class="grouping">
+      <a href="/novara-health" title="Novara Health" class="link sans dark loud">Novara Health</a>
+      <p class="copy dark">Designer, Developer-ish</p>
+    </span>
+
+    <span class="grouping">
+      <a href="/pledge-it" title="PLEDGE IT" class="link sans dark loud">PLEDGE IT</a>
+      <p class="copy dark">Designer, Develope</p>
+    </span>
+
+
 
     <a href="http://www.dribbble.com/brisayswhaat/getting-away-with-shit" title="Getting Away With Shit">Getting Away With Shit</a>
     <p class="">Lettering, Designer</p>

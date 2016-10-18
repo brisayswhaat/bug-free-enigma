@@ -290,20 +290,25 @@ h1, h2, h3, h4, h5, h6 {
       display: block; }
   @media screen and (min-width: 570px) {
     .content {
-      font-size: 24px;
+      font-size: 21px;
       letter-spacing: 1.5px; }
       .content strong {
-        font-size: 21px; } }
+        font-size: 18px; } }
   .content.dark, .content.dark a {
     color: #454545; }
   .content.dark {
     margin-bottom: 25px; }
+  .content.content-larger {
+    font-size: 24px; }
+    @media screen and (min-width: 570px) {
+      .content.content-larger {
+        font-size: 27px; } }
 
 .footer-copy p {
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
-  color: #fff; }
+  color: #454545; }
   @media screen and (min-width: 570px) {
     .footer-copy p {
       font-size: 14px; } }
@@ -500,9 +505,9 @@ img {
           margin-right: 0; } }
 
 .site-footer {
-  height: 120px;
+  height: 100px;
   width: 100%;
-  position: absolute;
+  position: static;
   bottom: 0px;
   display: -webkit-box;
   display: -moz-box;
@@ -530,22 +535,11 @@ img {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  padding: 0 15px; }
+  padding: 0 15px;
+  border-top: 1px solid #ec139d; }
   @media screen and (min-width: 960px) {
     .site-footer {
       padding: 0; } }
-
-.social-row {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center; }
-  .social-row ul, .social-row li {
-    list-style-type: none;
-    padding: 10px 0;
-    margin: 0; }
-  .social-row li {
-    display: inline-block; }
 
 .site-info {
   height: auto;
@@ -554,46 +548,37 @@ img {
   text-align: center;
   padding-bottom: 10px; }
 
+.page-template-homepage .site-footer {
+  margin-top: none; }
+.page-template-homepage .footer-copy p {
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Modules
 --------------------------------------------------------------*/
-.site-content {
+.site-main {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
   margin: 0 auto;
   padding: 50px 15px;
   height: auto; }
-  .site-content:last-child {
+  .site-main:last-child {
     margin-right: 0; }
   @media screen and (min-width: 570px) {
-    .site-content {
+    .site-main {
       padding: 80px; } }
   @media screen and (min-width: 960px) {
-    .site-content {
+    .site-main {
       padding: 50px 35px 50px;
       max-width: 1280px;
-      margin: 0 auto;
+      margin: 0 auto !important;
       float: none;
       clear: both; } }
+
+.page-template-homepage .site-main {
+  padding-top: 200px; }
 
 .contact-me {
   margin: 85px 0 0;
@@ -626,33 +611,25 @@ body {
     min-height: 100vh; }
 
 .wrapped {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-align-content: center;
-  -moz-align-content: center;
-  align-content: center;
-  -ms-flex-line-pack: center;
   padding: 50px 0;
   width: 100%;
   height: 100%; }
   @media screen and (min-width: 570px) {
     .wrapped {
       padding: 20px 0; } }
+
+.full-width {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .full-width:last-child {
+    margin-right: 0; }
+
+.intro-copy {
+  padding: 60px 0;
+  border-bottom: 1px solid #ec139d;
+  margin-bottom: 10px; }
 
 .content--columns {
   float: left;
@@ -680,5 +657,8 @@ body {
     .content--columns {
       max-width: 1440px;
       margin: 0 auto; } }
+
+.about {
+  padding-bottom: 80px; }
 
 /*# sourceMappingURL=style.css.map */

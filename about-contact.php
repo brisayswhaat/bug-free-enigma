@@ -7,9 +7,11 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-  <section class="thats-a-wrap">
-
-      <div class="content--columns">
+  <section class="wrapped">
+    <div class="about full-width">
+      <div class="intro-copy"><p class="content dark content-larger">Bri is a designer, front end developer &amp; community enthusiast currently doing her thing in Central Pennsylvania. She's passionate about design for the greater good, the AIGA Women Lead initiative, cats, coffee, yoga, community &amp; cities.</p></div>
+    </div>
+      <div class="about content--columns">
         <div class="column">
           <?php
             if ( have_posts() ) {

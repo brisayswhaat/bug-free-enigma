@@ -28,11 +28,11 @@
   }
 
   @include media($screen-medium) {
-    font-size: 24px;
+    font-size: 21px;
     letter-spacing: 1.5px;
 
     strong {
-      font-size: 21px;
+      font-size: 18px;
     }
   }
 
@@ -44,13 +44,21 @@
   &.dark {
     margin-bottom: 25px;
   }
+
+  &.content-larger {
+    font-size: 24px;
+
+    @include media($screen-medium) {
+      font-size: 27px;
+    }
+  }
 }
 
 .footer-copy p {
   font-family: $sans;
   font-weight: 300;
   font-size: 13px;
-  color: #fff;
+  color: $ob;
 
   @include media($screen-medium) {
     font-size: 14px;

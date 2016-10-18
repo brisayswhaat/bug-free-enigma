@@ -1,7 +1,5 @@
-.site-content {
+.site-main {
   @include span-columns(12);
-  @include display(flex);
-  @include flex-direction(column);
   margin: 0 auto;
   padding: 50px 15px;
   height: auto;
@@ -13,8 +11,14 @@
   @include media($screen-large) {
     padding: 50px 35px 50px;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     float: none;
     clear: both;
+  }
+}
+
+.page-template-homepage {
+  .site-main {
+    padding-top: 200px;
   }
 }

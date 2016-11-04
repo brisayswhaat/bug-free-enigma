@@ -8,10 +8,12 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
   <section class="wrapped">
-    <div class="about full-width">
-      <div class="intro-copy"><p class="copy dark larger">Bri is a designer, front end developer &amp; community enthusiast currently doing her thing in Central Pennsylvania. She's passionate about design for the greater good, the AIGA Women Lead initiative, cats, coffee, yoga, community &amp; cities.</p></div>
+    <div class="full-width">
+      <div class="intro-copy"><p class="copy mid dark">Bri is a designer, front end developer &amp; community enthusiast currently doing her thing in Lancaster, Penna. She's passionate about design for the greater good, the AIGA Women Lead initiative, cats, coffee, yoga, community &amp; cities.</p></div>
     </div>
-      <div class="about content--columns">
+    <div class="border-across"></div>
+    <div class="full-width">
+      <div class="content--columns">
         <div class="column">
           <?php
             if ( have_posts() ) {
@@ -46,7 +48,6 @@ get_header(); ?>
                 <i class="fa fa-github"></i>
               </a>
             </li>
-            </li>
             <li>
             <a href="https://open.spotify.com/user/1215731033" target="_blank" title="Spotify" class="icon">
               <i class="fa fa-spotify"></i>
@@ -65,6 +66,7 @@ get_header(); ?>
 
           </div>
         </div>
+      </div>
     </div>
   </section>
 </main>

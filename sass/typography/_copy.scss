@@ -1,6 +1,6 @@
 .copy {
   font-family: $sans;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
 
@@ -8,6 +8,15 @@
     font-size: 15px;
     font-weight: 700;
     margin-bottom: -25px;
+  }
+
+  @include media($screen-medium) {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    strong {
+      font-size: 18px;
+    }
   }
 
   &.light {
@@ -31,6 +40,14 @@
     }
   }
 
+  &.mid {
+    font-size: 18px;
+
+    @include media($screen-medium) {
+      font-size: 24px;
+    }
+  }
+
   &.larger {
     font-size: 24px;
 
@@ -46,15 +63,6 @@
 
   &.loud {
     text-transform: uppercase;
-  }
-
-  @include media($screen-medium) {
-    font-size: 21px;
-    letter-spacing: 1.5px;
-
-    strong {
-      font-size: 18px;
-    }
   }
 }
 

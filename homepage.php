@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-  <section class="wrapped">
+  <section class="homepage-content">
     <?php
       if ( have_posts() ) {
         while ( have_posts() ) {

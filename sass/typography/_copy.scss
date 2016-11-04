@@ -37,6 +37,11 @@
     @include media($screen-medium) {
       font-size: 27px;
     }
+
+    @include media($screen-large) {
+      font-size: 32px;
+      line-height: 1.5;
+    }
   }
 
   &.loud {
@@ -53,7 +58,7 @@
   }
 }
 
-.content a {
+.copy a {
   color: $ow;
   text-decoration: none;
 

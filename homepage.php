@@ -9,6 +9,7 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
   <section class="homepage-content">
+
     <?php
       if ( have_posts() ) {
         while ( have_posts() ) {
@@ -17,6 +18,7 @@ get_header(); ?>
         } // end while
       } // end if
     ?>
+    
   </section>
 </main>
 

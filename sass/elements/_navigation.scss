@@ -22,9 +22,6 @@
   @include media($screen-medium) {
     padding: 0;
   }
-
-  @include media($screen-xlarge) {
-  }
 }
 
 .menu-item {
@@ -43,6 +40,14 @@
 
     &:first-of-type {
       @include span-columns(4 of 12);
+    }
+  }
+
+  @include media($screen-xlarge) {
+    @include span-columns(6 of 12);
+
+    &:first-of-type {
+      @include span-columns(6 of 12);
     }
   }
 }

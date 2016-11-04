@@ -1,6 +1,6 @@
 .site-footer {
     @include size(100% 100px);
-    @include position(absolute, null null 0px);
+    @include position(static, null null 0px);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);

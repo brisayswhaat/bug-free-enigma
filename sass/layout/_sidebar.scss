@@ -1,0 +1,4 @@
+.widget-area {
+  @include span-columns(3 of 12);
+  @include shift(.5);
+}

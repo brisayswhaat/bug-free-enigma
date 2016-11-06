@@ -1,7 +1,43 @@
 // Homepage
+body {
+  @include size(100%);
+
+  &.page-template-homepage {
+    .site {
+      @include linear-gradient(135deg, $orange 0%, $magenta 100%);
+      height: auto;
+      min-height: 100vh;
+    }
+
+    .site-main {
+      @include display(flex);
+      height: 60vh;
+
+      @include media($screen-large) {
+        padding: 0 35px;
+      }
+    }
+
+    .homepage-content {
+      @include display(flex);
+      @include align-self(center);
+      padding: 15px;
+    }
+  }
+}
 
 // About-Contact
 .contact-me {
   margin: 50px 0 0;
   display: block;
+}
+
+.page-template-about-contact {
+  .content.copy {
+    line-height: 2;
+  }
+}
+
+.grouping {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,16 @@
+.post {
+  @include span-columns(8.5 of 12);
+  padding-bottom: 50px;
+}
+
+.entry-content {
+  img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .aligncenter {
+    margin: 15px auto;
+    display: block;
+  }
+}

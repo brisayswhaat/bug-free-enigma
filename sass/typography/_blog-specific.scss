@@ -1,0 +1,109 @@
+.entry-title {
+  font-family: $sans;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: $regular;
+  color: $magenta;
+  margin-bottom: 30px;
+}
+
+.entry-header {
+  .entry-link {
+    @include transition(all .4s ease-in-out);
+    text-decoration: none;
+  }
+
+   .entry-link .entry-title {
+     @include transition(all .4s ease-in-out);
+     color: $magenta;
+
+     &:hover,
+     &:active {
+       @include transition(all .4s ease-in-out);
+       color: $ob;
+     }
+   }
+}
+
+.entry-content{
+  font-family: $serif;
+  font-weight: $regular;
+  color: $ob;
+  font-size: 16px;
+  line-height: 1.7;
+
+  h2 {
+    font-family: $alt;
+    font-size: 24px;
+    margin-bottom: -10px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+
+  .read-more {
+    color: $magenta;
+    margin-left: 10px;
+
+    &:hover {
+      color: $ob;
+    }
+  }
+}
+
+.post-date {
+  font-family: $sans;
+  font-weight: $light !important;
+  text-transform: uppercase;
+  color: $ob;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin-bottom: -20px;
+
+  a {
+    text-decoration: none;
+    color: $ob;
+  }
+}
+
+.post-edit-link {
+  font-family: $sans;
+  font-size: 16px;
+  color: $magenta;
+
+  &:hover {
+    color: $ob;
+  }
+}
+
+// Widgets
+.widget-title {
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $ob;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.widget {
+  margin-bottom: 20px;
+
+  ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $ob;
+
+    a {
+      @include transition(all .4s ease-in-out);
+      color: $ob;
+
+      &:hover {
+        @include transition(all .4s ease-in-out);
+        color: $magenta;
+      }
+    }
+  }
+}

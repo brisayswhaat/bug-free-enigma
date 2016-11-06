@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  font-family: $serif;
+  font-family: $alt;
   font-size: 3.2rem;
   font-weight: 700;
   color: $ow;
@@ -33,14 +33,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .subheadline {
 	font-family: $sans;
-	font-size: 15px;
-	font-weight: 700;
+	font-size: 13px;
+	font-weight: $light;
 	color: $magenta-light;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	text-transform: uppercase;
 
 	@include media($screen-medium) {
-		font-size: 24px;
+		font-size: 15px;
 		letter-spacing: 1.5px;
 	}
 }

@@ -1,12 +1,23 @@
 .copy {
-  font-family: $sans;
   font-size: 16px;
-  font-weight: 300;
   letter-spacing: 1px;
+
+  &.sans {
+    font-family: $sans;
+    font-weight: 300;
+  }
+
+  &.serif {
+    font-family: $serif;
+  }
+
+  &.alt {
+    font-family: $alt;
+  }
 
   strong {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: $light;
     margin-bottom: -25px;
   }
 
@@ -50,6 +61,7 @@
 
   &.larger {
     font-size: 24px;
+    font-weight: $regular;
 
     @include media($screen-medium) {
       font-size: 27px;
@@ -67,11 +79,15 @@
 }
 
 .copy a {
+  @include transition(all .5s ease-in-out);
   color: $ow;
+  border-bottom: 3px solid $ow;
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    @include transition(all .5s ease-in-out);
+    color: $ob;
+    border-bottom: 3px solid transparent;
   }
 
   &:nth-of-type(4n){

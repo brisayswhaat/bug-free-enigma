@@ -25,29 +25,8 @@
 }
 
 .menu-item {
-  @include span-columns(3 of 12);
-  @include shift(.75);
+  @include span-columns(6 of 12);
   text-align: center;
   margin: -15px 0 0;
   padding: 0;
-
-  &:first-of-type{
-    @include span-columns(5 of 12);
-  }
-
-  @include media($screen-medium){
-    @include span-columns(4 of 12);
-
-    &:first-of-type {
-      @include span-columns(4 of 12);
-    }
-  }
-
-  @include media($screen-xlarge) {
-    @include span-columns(6 of 12);
-
-    &:first-of-type {
-      @include span-columns(6 of 12);
-    }
-  }
 }

@@ -1,4 +1,8 @@
 .widget-area {
-  @include span-columns(3 of 12);
-  @include shift(.5);
+  display: none;
+  
+  @include media($screen-medium) {
+    @include span-columns(3 of 12);
+    @include shift(.5);
+  }
 }

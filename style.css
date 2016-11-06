@@ -270,11 +270,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-title {
   font-family: "filson-soft", "Filson Soft", "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 400;
   color: #ec139d;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
+  @media screen and (min-width: 570px) {
+    .entry-title {
+      font-size: 36px;
+      margin-bottom: 30px; } }
 
 .entry-header .entry-link {
   -webkit-transition: all 0.4s ease-in-out;
@@ -303,7 +307,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     margin-bottom: -10px;
     margin-top: 15px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    line-height: 1.2; }
   .entry-content .read-more {
     color: #ec139d;
     margin-left: 10px; }
@@ -318,10 +323,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: .5px;
-  margin-bottom: -20px; }
+  margin-bottom: -10px; }
   .post-date a {
     text-decoration: none;
     color: #454545; }
+  @media screen and (min-width: 570px) {
+    .post-date {
+      margin-bottom: -20px; } }
 
 .post-edit-link {
   font-family: "filson-soft", "Filson Soft", "Raleway", Helvetica, Arial, sans-serif;
@@ -604,50 +612,12 @@ img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 6.39735%;
+  width: 48.82117%;
   text-align: center;
   margin: -15px 0 0;
   padding: 0; }
   .menu-item:last-child {
     margin-right: 0; }
-  .menu-item:first-of-type {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%; }
-    .menu-item:first-of-type:last-child {
-      margin-right: 0; }
-  @media screen and (min-width: 570px) {
-    .menu-item {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .menu-item:last-child {
-        margin-right: 0; }
-      .menu-item:first-of-type {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .menu-item:first-of-type:last-child {
-          margin-right: 0; } }
-  @media screen and (min-width: 1050px) {
-    .menu-item {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .menu-item:last-child {
-        margin-right: 0; }
-      .menu-item:first-of-type {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .menu-item:first-of-type:last-child {
-          margin-right: 0; } }
 
 .site-footer {
   height: 100px;
@@ -751,11 +721,24 @@ body {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
     -webkit-align-self: center;
     -moz-align-self: center;
     align-self: center;
     -ms-flex-item-align: center;
     padding: 15px; }
+    body.page-template-homepage .homepage-content .copy.larger {
+      margin-bottom: 5px;
+      margin-top: 5px; }
 
 .contact-me {
   margin: 50px 0 0;
@@ -864,13 +847,15 @@ body {
             margin-right: 0; } }
 
 .post {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 70.14568%;
   padding-bottom: 50px; }
-  .post:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 570px) {
+    .post {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 70.14568%; }
+      .post:last-child {
+        margin-right: 0; } }
 
 .entry-content img {
   margin-top: 15px;
@@ -880,12 +865,15 @@ body {
   display: block; }
 
 .widget-area {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 4.2649%; }
-  .widget-area:last-child {
-    margin-right: 0; }
+  display: none; }
+  @media screen and (min-width: 570px) {
+    .widget-area {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-left: 4.2649%; }
+      .widget-area:last-child {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

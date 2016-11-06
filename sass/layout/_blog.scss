@@ -1,6 +1,9 @@
 .post {
-  @include span-columns(8.5 of 12);
   padding-bottom: 50px;
+
+  @include media($screen-medium) {
+    @include span-columns(8.5 of 12);
+  }
 }
 
 .entry-content {

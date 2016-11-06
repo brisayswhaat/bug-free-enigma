@@ -20,8 +20,14 @@ body {
 
     .homepage-content {
       @include display(flex);
+      @include flex-direction(column);
       @include align-self(center);
       padding: 15px;
+
+      .copy.larger {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
     }
   }
 }

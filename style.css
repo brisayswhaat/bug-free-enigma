@@ -781,6 +781,15 @@ body {
     line-height: 1.5;
     padding-bottom: 0; }
 
+@media screen and (min-width: 570px) {
+  .comments-area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 70.14568%; }
+    .comments-area:last-child {
+      margin-right: 0; } }
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/

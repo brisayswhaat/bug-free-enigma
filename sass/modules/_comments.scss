@@ -1,0 +1,6 @@
+.comments-area {
+
+    @include media($screen-medium) {
+      @include span-columns(8.5 of 12);
+    }
+}

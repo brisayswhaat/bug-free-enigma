@@ -12,6 +12,8 @@ get_header(); ?>
 	<div id="post" class="content-area single-post">
 		<main id="main" class="site-main" role="main">
 
+			<?php get_sidebar(); ?>
+
 				<?php
 				while ( have_posts() ) : the_post();
 
@@ -26,8 +28,7 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
-				
-				<?php get_sidebar(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

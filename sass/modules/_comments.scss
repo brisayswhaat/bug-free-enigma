@@ -1,6 +1,108 @@
 .comments-area {
+  border-top: 1px solid $magenta;
+  padding-top: 20px;
 
     @include media($screen-medium) {
       @include span-columns(8.5 of 12);
     }
+}
+
+ul.comment-list {
+  list-style-type: none;
+
+  li {
+    list-style-type: none;
+
+      @include media($screen-medium) {
+        margin-left: 20px;
+        margin-bottom: 25px;
+      }
+  }
+}
+
+.comment-content {
+  margin-top: -10px;
+}
+
+.comment-respond {
+  @include span-columns(12);
+  margin-top: 45px;
+  border-top: 1px solid $magenta;
+  padding-top: 20px;
+  margin-bottom: 50px;
+
+  form {
+    .logged-in-as {
+      margin-top: -15px;
+    }
+
+    .comment-form-author,
+    .comment-form-email {
+      @include media($screen-medium) {
+        display: inline-block;
+        margin-top: 5px;
+      }
+    }
+
+    .comment-form-email {
+      @include media($screen-medium) {
+        margin-left: 25px;
+      }
+    }
+
+    textarea {
+      @include media($screen-medium) {
+        width: 530px;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    textarea,
+    input {
+      display: block;
+    }
+
+    textarea,
+    input {
+      padding: 10px;
+      border: 1px solid $ob;
+
+      &:focus {
+        border-color: lighten($magenta, 20%);
+        outline-color: lighten($magenta, 20%);
+      }
+    }
+
+    .form-submit {
+      margin-top: 0px;
+
+      input[type="submit"]{
+        @include transition(all .4s ease-in-out);
+        background: none;
+        border: 1px solid $magenta;
+        padding: 15px 20px;
+        margin: 15px 0;
+        display: block;
+        max-width: 200px;
+        text-align: center;
+        text-decoration: none !important;
+
+        &:hover,
+        &:active {
+          @include transition(all .4s ease-in-out);
+          border: 1px solid #fff;
+          background: $magenta-light;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.comment-notes {
+  margin-top: -15px;
 }

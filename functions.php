@@ -166,3 +166,14 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+/**
+	* Remove URL from comments form
+	*
+	*/
+
+	function crunchify_disable_comment_url($fields) {
+    unset($fields['url']);
+    return $fields;
+	}
+	add_filter('comment_form_default_fields','crunchify_disable_comment_url');

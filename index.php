@@ -17,7 +17,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="post" class="site-blog" role="main">
+		<main id="post" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 			<?php
@@ -28,7 +28,7 @@ get_header(); ?>
 
 			// End the loop.
 			endwhile;
-			
+
 		// If no content, include the "No posts found" template.
 		else :
 			get_template_part( 'content', 'none' );
@@ -39,4 +39,5 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
-<?php get_footer(); ?>
+<?php get_sidebar();
+			get_footer(); ?>

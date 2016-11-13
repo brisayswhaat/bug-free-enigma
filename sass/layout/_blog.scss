@@ -1,0 +1,19 @@
+.post {
+  padding-bottom: 50px;
+
+  @include media($screen-medium) {
+    @include span-columns(8.5 of 12);
+  }
+}
+
+.entry-content {
+  img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .aligncenter {
+    margin: 15px auto;
+    display: block;
+  }
+}

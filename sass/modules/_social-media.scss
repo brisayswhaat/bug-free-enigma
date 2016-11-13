@@ -1,4 +1,6 @@
 .social-links {
+  margin-top: 15px;
+
   ul, li {
     list-style-type: none;
     display: inline-block;
@@ -6,10 +8,12 @@
     padding: 0;
 
     .icon {
+      @include transition(all .4s ease-in-out);
       color: $ob;
 
       &:hover,
       &:active {
+        @include transition(all .4s ease-in-out);
         color: $magenta-light;
       }
     }

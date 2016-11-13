@@ -1,0 +1,11 @@
+.widget-area {
+  display: none;
+
+  @include media($screen-medium) {
+    @include span-columns(3 of 12);
+    @include shift(.5);
+    position: absolute;
+    right: 50px;
+    margin-top: 35px;
+  }
+}

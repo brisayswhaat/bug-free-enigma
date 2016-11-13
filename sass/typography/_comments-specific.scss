@@ -1,0 +1,99 @@
+.comments-title,
+.comment-reply-title {
+  font-family: $sans;
+  font-size: 18px;
+	font-weight: $light;
+	color: $magenta-light;
+}
+
+.comment-author,
+.comment-metadata {
+  font-family: $alt;
+  font-size: 15px;
+  font-weight: $regular;
+  color: $ob;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $ob;
+  }
+
+  .comment-edit-link {
+    text-decoration: underline;
+
+    &:hover {
+      color: $magenta;
+      cursor: pointer;
+    }
+  }
+}
+
+.comment-content {
+  p {
+    font-family: $serif;
+    font-size: 16px;
+    color: $ob;
+  }
+}
+
+.comment-respond {
+  .comment-notes {
+    font-family: $serif;
+    color: $ob;
+    font-size: 15px;
+  }
+}
+
+#commentform {
+  .logged-in-as {
+    font-family: $alt;
+    font-size: 16px;
+    color: $ob;
+    text-decoration: none;
+
+    a:first-of-type {
+      color: $ob;
+      text-decoration: none;
+    }
+
+    a:last-of-type {
+      font-family: $alt;
+      font-size: 16px;
+      color: $ob;
+      text-decoration: underline;
+
+      &:hover {
+        color: $magenta;
+      }
+    }
+  }
+
+  label {
+    font-family: $sans;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $ob;
+  }
+
+  input,
+  textarea {
+    font-family: $serif;
+    font-size: 15px;
+    line-height: 1.2;
+    color: $ob;
+  }
+
+  .form-submit {
+    input[type="submit"]{
+      font-family: $sans;
+      text-transform: uppercase;
+      color: $magenta;
+      font-size: 15px;
+
+      &:hover {
+        color: $ow;
+      }
+    }
+  }
+}

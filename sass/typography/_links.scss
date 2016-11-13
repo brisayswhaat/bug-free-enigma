@@ -5,7 +5,9 @@
   font-size: 14px;
   color: $ow;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid transparent;
+  @include transition(ease-in-out 0.4s all);
 
   &:hover {
     color: $ow;
@@ -40,7 +42,7 @@
   font-weight: 300;
   letter-spacing: 1px;
   color: $ob;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: $ow;
@@ -62,17 +64,21 @@
 }
 
 .button {
+  @include transition(all .4s ease-in-out);
   border: 1px solid $magenta;
   padding: 15px 20px;
   margin: 15px 0;
   display: block;
   max-width: 200px;
   text-align: center;
+  text-decoration: none !important;
 
   &:hover,
   &:active {
+    @include transition(all .4s ease-in-out);
     border: 1px solid #fff;
     background: $magenta-light;
+    text-decoration: none;
   }
 }
 

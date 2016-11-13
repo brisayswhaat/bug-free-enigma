@@ -1,27 +1,3 @@
-body {
-  @include size(100%);
-
-  &.page-template-homepage {
-    .site {
-      @include linear-gradient(135deg, $orange 0%, $magenta 100%);
-      height: auto;
-      min-height: 100vh;
-    }
-
-    .site-main {
-      @include display(flex);
-      height: 60vh;
-      padding: 0;
-    }
-
-    .homepage-content {
-      @include display(flex);
-      @include align-self(center);
-      padding: 15px;
-    }
-  }
-}
-
 .wrapped {
   width: 100%;
   height: 100%;
@@ -33,11 +9,6 @@ body {
   margin: 0 auto !important;
   float: none;
   clear: both;
-}
-
-.intro-copy {
-  margin-bottom: 10px;
-  padding-bottom: 40px;
 }
 
 .border-across {
